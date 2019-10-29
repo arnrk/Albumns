@@ -2,10 +2,44 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 
 namespace AlbumCollection.Controllers
 {
-    public class SongController
+    [Route("api/[controller]")]
+    [ApiController]
+    public class Song : ControllerBase
     {
+        // GET api/song
+        [HttpGet]
+        public ActionResult<IEnumerable<string>> Get()
+        {
+            return new string[] { "artist1", "artist2" };
+        }
+
+        // GET api/song/5
+        [HttpGet("{id}")]
+        public ActionResult<string> Get(int id)
+        {
+            return "song";
+        }
+
+        // POST api/song
+        [HttpPost]
+        public void Post([FromBody] string song)
+        {
+        }
+
+        // PUT api/song/5
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody] string song)
+        {
+        }
+
+        // DELETE api/song/5
+        [HttpDelete("{id}")]
+        public void Delete(int id)
+        {
+        }
     }
 }
