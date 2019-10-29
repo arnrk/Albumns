@@ -13,8 +13,78 @@ namespace AlbumCollection.Data
         public DbSet<Artists> Artists { get; set; }
         public DbSet<Songs> Songs { get; set; }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            var connectionString = "Server=(localdb)\\mssqllocaldb;Database=AlbumCollection;Trusted_Connection=True;";
+            optionsBuilder.UseSqlServer(connectionString)
+                          .UseLazyLoadingProxies();
+            base.OnConfiguring(optionsBuilder);
+        }
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Artists>().HasData(
+                new Artists()
+                {
+                    ID = 1,
+                    Name = "U2",
+                    Age = null,
+                    Recordlabel = "null",
+                    Hometown = "null",
+                },
+                new Artists()
+                {
+                    ID = 2,
+                    Name = "Kid Cudi",
+                    Age = null,
+                    Recordlabel = "null",
+                    Hometown = "null",
+                },
+                new Artists()
+                {
+                    ID = 3,
+                    Name = "Huey Lewis and the News",
+                    Age = null,
+                    Recordlabel = "null",
+                    Hometown = "null",
+                },
+                new Artists()
+                {
+                    ID = 4,
+                    Name = "J. Cole",
+                    Age = null,
+                    Recordlabel = "null",
+                    Hometown = "null",
+                },
+                new Artists()
+                {
+                    ID = 5,
+                    Name = "Anna Leone",
+                    Age = null,
+                    Recordlabel = "null",
+                    Hometown = "null",
+                },
+                new Artists()
+                {
+                    ID = 6,
+                    Name = "The Offspring",
+                    Age = null,
+                    Recordlabel = "null",
+                    Hometown = "null",
+                },
+                new Artists()
+                {
+                    ID = 7,
+                    Name = "Green Day",
+                    Age = null,
+                    Recordlabel = "null",
+                    Hometown = "null",
+                });
+            modelBuilder.Entity<Albums>().HasData(
+
+                );
+        
             modelBuilder.Entity<Songs>().HasData(
                 new Songs()
                 {
