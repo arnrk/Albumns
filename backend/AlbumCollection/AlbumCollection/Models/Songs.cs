@@ -7,5 +7,25 @@ namespace AlbumCollection.Models
 {
     public class Songs
     {
+        public int ID { get; set; }
+        public string Songtitle { get; set; }
+        public string Duration { get; set; }
+        public string Link { get; set; }
+
+        public Songs()
+        {
+        }
+
+        public Songs(int id, string title, string duration, string link)
+        {
+            ID = id;
+            Songtitle = title;
+            Duration = duration;
+            Link = Link;
+
+        }
+
+
+
     }
 }
