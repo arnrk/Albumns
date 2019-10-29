@@ -5,7 +5,12 @@ using System.Threading.Tasks;
 
 namespace AlbumCollection.Repository
 {
-    public class IRepository
+    public interface IRepository<T> where T : class
     {
+        IEnumerable<T> GetAll();
+        T GetByID(int id);
+        void Create(T obj);
+        void Delete(T obj);
+        void Edit(T obj);
     }
 }
