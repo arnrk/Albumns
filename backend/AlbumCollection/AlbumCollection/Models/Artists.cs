@@ -7,5 +7,6 @@ namespace AlbumCollection.Models
 {
     public class Artists
     {
+
     }
 }
