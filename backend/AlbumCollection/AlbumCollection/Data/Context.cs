@@ -28,61 +28,102 @@ namespace AlbumCollection.Data
                 new Artists()
                 {
                     ID = 1,
-                    Name = "U2",
-                    Age = null,
-                    Recordlabel = "null",
-                    Hometown = "null",
+                    Name = "Kid Cudi",
+                    Age = 35,
+                    Recordlabel = "Wicked Awesome",
+                    Hometown = "Cleveland, OH",
                 },
                 new Artists()
                 {
                     ID = 2,
-                    Name = "Kid Cudi",
-                    Age = null,
-                    Recordlabel = "null",
-                    Hometown = "null",
+                    Name = "Heuy Lewis And The News",
+                    Age = 40,
+                    Recordlabel = "Chrysalis Records",
+                    Hometown = "San Francisco, CA",
                 },
                 new Artists()
                 {
                     ID = 3,
-                    Name = "Huey Lewis and the News",
-                    Age = null,
-                    Recordlabel = "null",
-                    Hometown = "null",
+                    Name = "J. Cole",
+                    Age = 34,
+                    Recordlabel = "Dreamville",
+                    Hometown = "Fayetteville, NC",
                 },
                 new Artists()
                 {
                     ID = 4,
-                    Name = "J. Cole",
-                    Age = null,
-                    Recordlabel = "null",
-                    Hometown = "null",
+                    Name = "Anna Leone",
+                    Age = 23,
+                    Recordlabel = "Half Awake",
+                    Hometown = "Stockholm, Sweden",
                 },
                 new Artists()
                 {
                     ID = 5,
-                    Name = "Anna Leone",
-                    Age = null,
-                    Recordlabel = "null",
-                    Hometown = "null",
+                    Name = "The Offspring",
+                    Age = 35,
+                    Recordlabel = "Nitro Records",
+                    Hometown = "Garden Grove, CA",
                 },
                 new Artists()
                 {
                     ID = 6,
-                    Name = "The Offspring",
-                    Age = null,
-                    Recordlabel = "null",
-                    Hometown = "null",
+                    Name = "Green Day",
+                    Age = 33,
+                    Recordlabel = "Lookout!",
+                    Hometown = "Oakland, CA",
                 },
                 new Artists()
                 {
                     ID = 7,
-                    Name = "Green Day",
-                    Age = null,
-                    Recordlabel = "null",
-                    Hometown = "null",
+                    Name = "U2",
+                    Age = 32,
+                    Recordlabel = "Island Records",
+                    Hometown = "Dublin, Ireland",
                 });
             modelBuilder.Entity<Albums>().HasData(
-
+                new Albums()
+                {
+                    ID = 1,
+                    Title = "Indicud",
+                    Recordlabel = "Wicked Awesome"
+                },
+                new Albums()
+                {
+                    ID = 2,
+                    Title = "Sports",
+                    Recordlabel = "Chrysalis Records"
+                },
+                new Albums()
+                {
+                    ID = 3,
+                    Title = "2014 Forest Hills Drive",
+                    Recordlabel = "Dreamville"
+                },
+                new Albums()
+                {
+                    ID = 4,
+                    Title = "Wandered Away",
+                    Recordlabel = "Half Awake"
+                },
+                new Albums()
+                {
+                    ID = 5,
+                    Title = "Smash",
+                    Recordlabel = "Nitro Records"
+                },
+                new Albums()
+                {
+                    ID = 6,
+                    Title = "Dookie",
+                    Recordlabel = "Lookout!"
+                },
+                new Albums()
+                {
+                    ID = 7,
+                    Title = "Joshua Tree",
+                    Recordlabel = "Island Records"
+                }
                 );
         
             modelBuilder.Entity<Songs>().HasData(
