@@ -22,13 +22,14 @@ namespace AlbumCollection.Models
         }
 
 
-        public Artists(int id, string name, int age, string recordLabel, string hometown)
+        public Artists(int id, string name, int age, string recordLabel, string hometown, ICollection<Albums> albums)
         {
         ID = id;
         Name = name;
         Age = age;
         Recordlabel = recordLabel;
         Hometown = hometown;
+        Albums = albums;
         }
 
 

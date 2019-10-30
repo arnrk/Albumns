@@ -20,12 +20,13 @@ namespace AlbumCollection.Models
         {
         }
 
-        public Albums(int id, string title, string recordLabel)
+        public Albums(int id, string title, string recordLabel, ICollection<Songs> songs, int artistID)
         {
             ID = id;
             Title = title;
             Recordlabel = recordLabel;
-
+            Songs = songs;
+            ArtistID = artistID;
         }
 
     }

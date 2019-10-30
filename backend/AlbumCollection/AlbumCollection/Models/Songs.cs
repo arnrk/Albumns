@@ -18,11 +18,12 @@ namespace AlbumCollection.Models
         {
         }
 
-        public Songs(int id, string title, string duration)
+        public Songs(int id, string title, string duration, int albumID)
         {
             ID = id;
             Songtitle = title;
             Duration = duration;
+            AlbumID = albumID;
         }
 
 
