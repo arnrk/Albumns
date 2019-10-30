@@ -10,7 +10,11 @@ namespace AlbumCollection.Models
         public int ID { get; set; }
         public string Title { get; set; }
         public string Recordlabel { get; set; }
-    
+
+        public virtual ICollection<Songs> Songs { get; set; }
+
+        public virtual int ArtistID { get; set; }
+        public virtual Artists Artists { get; set; }
 
         public Albums()
         {

@@ -13,7 +13,9 @@ namespace AlbumCollection.Models
         public int Age { get; set; }
         public string Recordlabel { get; set; }
         public string Hometown { get; set; }
-   
+
+        public virtual ICollection<Albums> Albums { get; set; }
+
 
         public Artists()
         {

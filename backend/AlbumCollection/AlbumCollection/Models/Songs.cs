@@ -11,6 +11,9 @@ namespace AlbumCollection.Models
         public string Songtitle { get; set; }
         public string Duration { get; set; }
 
+        public virtual int AlbumID { get; set; }
+        public virtual Albums Albums { get; set; }
+
         public Songs()
         {
         }
