@@ -8,7 +8,7 @@ namespace AlbumCollection.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Artist : ControllerBase
+    public class ArtistController : ControllerBase
     {
         // GET api/Artist
         [HttpGet]

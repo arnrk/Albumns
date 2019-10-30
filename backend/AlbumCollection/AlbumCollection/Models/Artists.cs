@@ -16,20 +16,18 @@ namespace AlbumCollection.Models
 
         public virtual ICollection<Albums> Albums { get; set; }
 
-
         public Artists()
         {
         }
 
 
-        public Artists(int id, string name, int age, string recordLabel, string hometown, ICollection<Albums> albums)
+        public Artists(int id, string name, int age, string recordLabel, string hometown)
         {
         ID = id;
         Name = name;
         Age = age;
         Recordlabel = recordLabel;
         Hometown = hometown;
-        Albums = albums;
         }
 
 

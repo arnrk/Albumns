@@ -8,13 +8,13 @@ namespace AlbumCollection.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Song : ControllerBase
+    public class SongController : ControllerBase
     {
         // GET api/song
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "artist1", "artist2" };
+            return new string[] { "song1", "song2" };
         }
 
         // GET api/song/5
