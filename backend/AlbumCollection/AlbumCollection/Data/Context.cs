@@ -86,43 +86,51 @@ namespace AlbumCollection.Data
                 {
                     ID = 1,
                     Title = "Indicud",
-                    Recordlabel = "Wicked Awesome"
+                    Recordlabel = "Wicked Awesome",
+                    ArtistID = 1
                 },
                 new Albums()
                 {
                     ID = 2,
                     Title = "Sports",
-                    Recordlabel = "Chrysalis Records"
+                    Recordlabel = "Chrysalis Records",
+                    ArtistID = 2
+
                 },
                 new Albums()
                 {
                     ID = 3,
                     Title = "2014 Forest Hills Drive",
-                    Recordlabel = "Dreamville"
+                    Recordlabel = "Dreamville",
+                    ArtistID = 3
                 },
                 new Albums()
                 {
                     ID = 4,
                     Title = "Wandered Away",
-                    Recordlabel = "Half Awake"
+                    Recordlabel = "Half Awake",
+                    ArtistID = 4
                 },
                 new Albums()
                 {
                     ID = 5,
                     Title = "Smash",
-                    Recordlabel = "Nitro Records"
+                    Recordlabel = "Nitro Records",
+                    ArtistID = 5
                 },
                 new Albums()
                 {
                     ID = 6,
                     Title = "Dookie",
-                    Recordlabel = "Lookout!"
+                    Recordlabel = "Lookout!",
+                    ArtistID = 6
                 },
                 new Albums()
                 {
                     ID = 7,
                     Title = "Joshua Tree",
-                    Recordlabel = "Island Records"
+                    Recordlabel = "Island Records",
+                    ArtistID = 7
                 }
                 );
         
@@ -132,18 +140,22 @@ namespace AlbumCollection.Data
                     ID = 1,
                     Songtitle = "the resurrection of scott mescud",
                     Duration = "2:40",
+                    AlbumID = 1
                 },
                 new Songs()
                 {
                     ID = 2,
                     Songtitle = "Unfuckwittable",
                     Duration = "4:35",
+                    AlbumID = 1
+
                 },
                  new Songs()
                  {
                      ID = 3,
                      Songtitle = "Just What I Am",
                      Duration = "3:48",
+                     AlbumID = 1
 
                  },
                   new Songs()
@@ -151,27 +163,31 @@ namespace AlbumCollection.Data
                       ID = 4,
                       Songtitle = "Young Lady",
                       Duration = "4:24",
- 
+                      AlbumID = 1
+
                   },
                    new Songs()
                    {
                        ID = 5,
                        Songtitle = "King Wizard",
                        Duration = "4:16",
-  
+                       AlbumID = 1
+
                    },
                     new Songs()
                     {
                         ID = 6,
                         Songtitle = "Immortal ",
                         Duration = "5:01",
-   
+                        AlbumID = 1
+
                     },
                       new Songs()
                       {
                           ID = 7,
                           Songtitle = "Solo Duo, Part II ",
                           Duration = "3:34",
+                          AlbumID = 1
 
                       },
                       new Songs()
@@ -179,6 +195,7 @@ namespace AlbumCollection.Data
                           ID = 8,
                           Songtitle = "Girls",
                           Duration = "4:27",
+                          AlbumID = 1
 
                       },
                       new Songs()
@@ -186,6 +203,7 @@ namespace AlbumCollection.Data
                           ID = 9,
                           Songtitle = "New York City Rage Fest ",
                           Duration = "1:53",
+                          AlbumID = 1
 
                       },
                       new Songs()
@@ -193,6 +211,7 @@ namespace AlbumCollection.Data
                           ID = 10,
                           Songtitle = "Red Eye ",
                           Duration = "3:54",
+                          AlbumID = 1
 
                       },
                       new Songs()
@@ -200,6 +219,7 @@ namespace AlbumCollection.Data
                           ID = 11,
                           Songtitle = "Mad solar ",
                           Duration = "4:08",
+                          AlbumID = 1
 
                       },
                       new Songs()
@@ -207,6 +227,7 @@ namespace AlbumCollection.Data
                           ID = 12,
                           Songtitle = "Beez",
                           Duration = "3:13",
+                          AlbumID = 1
 
                       },
                       new Songs()
@@ -214,6 +235,7 @@ namespace AlbumCollection.Data
                           ID = 13,
                           Songtitle = "Brothers",
                           Duration = "4:41",
+                          AlbumID = 1
 
                       },
                       new Songs()
@@ -221,6 +243,7 @@ namespace AlbumCollection.Data
                           ID = 14,
                           Songtitle = "Burn Baby Burn",
                           Duration = "2:58",
+                          AlbumID = 1
 
                       },
                       new Songs()
@@ -228,6 +251,7 @@ namespace AlbumCollection.Data
                           ID = 15,
                           Songtitle = "Lord of the Sad and Lonely",
                           Duration = "2:46",
+                          AlbumID = 1
 
                       },
                       new Songs()
@@ -235,6 +259,7 @@ namespace AlbumCollection.Data
                           ID = 16,
                           Songtitle = "Cold Blooded",
                           Duration = "2:32",
+                          AlbumID = 1
 
                       },
                       new Songs()
@@ -242,6 +267,7 @@ namespace AlbumCollection.Data
                           ID = 17,
                           Songtitle = "Afterwards (Bring yo Friends)",
                           Duration = "9:03",
+                          AlbumID = 1
 
                       },
                       new Songs()
@@ -249,6 +275,7 @@ namespace AlbumCollection.Data
                           ID = 18,
                           Songtitle = "The Flight of the Moon Man",
                           Duration = "2:51",
+                          AlbumID = 1
 
                       },
                       new Songs()
@@ -256,6 +283,7 @@ namespace AlbumCollection.Data
                           ID = 19,
                           Songtitle = "The Heart Of Rock And Roll",
                           Duration = "5:05",
+                          AlbumID = 2
 
                       },
                       new Songs()
@@ -263,6 +291,7 @@ namespace AlbumCollection.Data
                           ID = 20,
                           Songtitle = "Heart And Soul",
                           Duration = "4:13",
+                          AlbumID = 2
 
                       },
                       new Songs()
@@ -270,6 +299,7 @@ namespace AlbumCollection.Data
                           ID = 21,
                           Songtitle = "Bad Is Bad",
                           Duration = "3:48",
+                          AlbumID = 2
 
                       },
                       new Songs()
@@ -277,6 +307,7 @@ namespace AlbumCollection.Data
                           ID = 22,
                           Songtitle = "I Want A New Drug",
                           Duration = "4:46",
+                          AlbumID = 2
 
                       },
                       new Songs()
@@ -284,6 +315,7 @@ namespace AlbumCollection.Data
                           ID = 23,
                           Songtitle = "Walking On A Thin Line",
                           Duration = "5:11",
+                          AlbumID = 2
 
                       },
                       new Songs()
@@ -291,6 +323,7 @@ namespace AlbumCollection.Data
                           ID = 24,
                           Songtitle = "Finally Found A Home",
                           Duration = "3:53",
+                          AlbumID = 2
 
                       },
                       new Songs()
@@ -298,6 +331,7 @@ namespace AlbumCollection.Data
                           ID = 25,
                           Songtitle = "If This Is It",
                           Duration = "3:53",
+                          AlbumID = 2
 
                       },
                       new Songs()
@@ -305,6 +339,7 @@ namespace AlbumCollection.Data
                           ID = 26,
                           Songtitle = "You Crack Me Up",
                           Duration = "3:43",
+                          AlbumID = 2
 
                       },
                       new Songs()
@@ -312,6 +347,7 @@ namespace AlbumCollection.Data
                           ID = 27,
                           Songtitle = "Honky Tonk Blues",
                           Duration = "3:21",
+                          AlbumID = 2
 
                       },
                       new Songs()
@@ -319,6 +355,7 @@ namespace AlbumCollection.Data
                           ID = 28,
                           Songtitle = "Intro",
                           Duration = "2:09",
+                          AlbumID = 3
 
                       },
                       new Songs()
@@ -326,6 +363,7 @@ namespace AlbumCollection.Data
                           ID = 29,
                           Songtitle = "January 28th",
                           Duration = "4:02",
+                          AlbumID = 3
 
                       },
                       new Songs()
@@ -333,6 +371,7 @@ namespace AlbumCollection.Data
                           ID = 30,
                           Songtitle = "Wet Dreamz",
                           Duration = "3:59",
+                          AlbumID = 3
 
                       },
                       new Songs()
@@ -340,6 +379,7 @@ namespace AlbumCollection.Data
                           ID = 31,
                           Songtitle = "03' Adolescence",
                           Duration = "4:24",
+                          AlbumID = 3
 
                       },
                       new Songs()
@@ -347,6 +387,7 @@ namespace AlbumCollection.Data
                           ID = 32,
                           Songtitle = "A Tale of 2 Citiez",
                           Duration = "4:29",
+                          AlbumID = 3
 
                       },
                       new Songs()
@@ -354,6 +395,7 @@ namespace AlbumCollection.Data
                           ID = 33,
                           Songtitle = "Fire Squad",
                           Duration = "4:48",
+                          AlbumID = 3
 
                       },
                       new Songs()
@@ -361,6 +403,7 @@ namespace AlbumCollection.Data
                           ID = 34,
                           Songtitle = "St. Tropez",
                           Duration = "4:17",
+                          AlbumID = 3
 
                       },
                       new Songs()
@@ -368,6 +411,7 @@ namespace AlbumCollection.Data
                           ID = 35,
                           Songtitle = "G.O.M.D.",
                           Duration = "5:01",
+                          AlbumID = 3
 
                       },
                       new Songs()
@@ -375,6 +419,7 @@ namespace AlbumCollection.Data
                           ID = 36,
                           Songtitle = "No Role Modelz",
                           Duration = "4:52",
+                          AlbumID = 3
 
                       },
                       new Songs()
@@ -382,6 +427,7 @@ namespace AlbumCollection.Data
                           ID = 37,
                           Songtitle = "Hello",
                           Duration = "3:39",
+                          AlbumID = 3
 
                       },
                       new Songs()
@@ -389,6 +435,7 @@ namespace AlbumCollection.Data
                           ID = 38,
                           Songtitle = "Apparently",
                           Duration = "4:53",
+                          AlbumID = 3
 
                       },
                       new Songs()
@@ -396,6 +443,7 @@ namespace AlbumCollection.Data
                           ID = 39,
                           Songtitle = "Love Yourz",
                           Duration = "3:31",
+                          AlbumID = 3
 
                       },
                       new Songs()
@@ -403,6 +451,7 @@ namespace AlbumCollection.Data
                           ID = 40,
                           Songtitle = "Note to Self",
                           Duration = "14:35",
+                          AlbumID = 3
 
                       },
                       new Songs()
@@ -410,13 +459,14 @@ namespace AlbumCollection.Data
                           ID = 41,
                           Songtitle = "I Never Really",
                           Duration = "4:15",
-
+                          AlbumID = 4
                       },
                       new Songs()
                       {
                           ID = 42,
                           Songtitle = "My Soul I",
                           Duration = "3:59",
+                          AlbumID = 4
 
                       },
                       new Songs()
@@ -424,6 +474,7 @@ namespace AlbumCollection.Data
                           ID = 43,
                           Songtitle = "Wandered Away",
                           Duration = "3:45",
+                          AlbumID = 4
 
                       },
                       new Songs()
@@ -431,6 +482,7 @@ namespace AlbumCollection.Data
                           ID = 44,
                           Songtitle = "If You Only",
                           Duration = "3:05",
+                          AlbumID = 4
 
                       },
                       new Songs()
@@ -438,6 +490,7 @@ namespace AlbumCollection.Data
                           ID = 45,
                           Songtitle = "Into the Cold",
                           Duration = "3:48",
+                          AlbumID = 4
 
                       },
                       new Songs()
@@ -445,6 +498,7 @@ namespace AlbumCollection.Data
                           ID = 46,
                           Songtitle = "Time to Relax",
                           Duration = "0:25",
+                          AlbumID = 5
 
                       },
                       new Songs()
@@ -452,6 +506,7 @@ namespace AlbumCollection.Data
                           ID = 47,
                           Songtitle = "Nitro",
                           Duration = "2:27",
+                          AlbumID = 5
 
                       },
                       new Songs()
@@ -459,6 +514,7 @@ namespace AlbumCollection.Data
                           ID = 48,
                           Songtitle = "Bad Habit",
                           Duration = "3:52",
+                          AlbumID = 5
 
                       },
                       new Songs()
@@ -466,6 +522,7 @@ namespace AlbumCollection.Data
                           ID = 49,
                           Songtitle = "Gotta Get Away",
                           Duration = "3:52",
+                          AlbumID = 5
 
                       },
                       new Songs()
@@ -473,6 +530,7 @@ namespace AlbumCollection.Data
                           ID = 50,
                           Songtitle = "Genocide",
                           Duration = "3:33",
+                          AlbumID = 5
 
                       },
                       new Songs()
@@ -480,6 +538,7 @@ namespace AlbumCollection.Data
                           ID = 51,
                           Songtitle = "Something to Believe In",
                           Duration = "3:17",
+                          AlbumID = 5
 
                       },
                       new Songs()
@@ -487,6 +546,7 @@ namespace AlbumCollection.Data
                           ID = 52,
                           Songtitle = "Come Out and Play",
                           Duration = "3:17",
+                          AlbumID = 5
 
                       },
                       new Songs()
@@ -494,6 +554,7 @@ namespace AlbumCollection.Data
                           ID = 53,
                           Songtitle = "Self Esteem",
                           Duration = "4:17",
+                          AlbumID = 5
 
                       },
                       new Songs()
@@ -501,6 +562,7 @@ namespace AlbumCollection.Data
                           ID = 54,
                           Songtitle = "It’ll Be a Long Time",
                           Duration = "2:43",
+                          AlbumID = 5
 
                       },
                       new Songs()
@@ -508,6 +570,7 @@ namespace AlbumCollection.Data
                           ID = 55,
                           Songtitle = "Killboy Powerhead",
                           Duration = "2:02",
+                          AlbumID = 5
 
                       },
                       new Songs()
@@ -515,6 +578,7 @@ namespace AlbumCollection.Data
                           ID = 56,
                           Songtitle = "What Happened to You?",
                           Duration = "2:12",
+                          AlbumID = 5
 
                       },
                       new Songs()
@@ -522,6 +586,7 @@ namespace AlbumCollection.Data
                           ID = 57,
                           Songtitle = "So Alone",
                           Duration = "1:17",
+                          AlbumID = 5
 
                       },
                       new Songs()
@@ -529,6 +594,7 @@ namespace AlbumCollection.Data
                           ID = 58,
                           Songtitle = "Not the One",
                           Duration = "2:54",
+                          AlbumID = 5
 
                       },
                       new Songs()
@@ -536,6 +602,7 @@ namespace AlbumCollection.Data
                           ID = 59,
                           Songtitle = "Smash",
                           Duration = "10:42",
+                          AlbumID = 5
 
                       },
                       new Songs()
@@ -543,6 +610,7 @@ namespace AlbumCollection.Data
                           ID = 60,
                           Songtitle = "Burnou",
                           Duration = "2:07",
+                          AlbumID = 6
 
                       },
                       new Songs()
@@ -550,6 +618,7 @@ namespace AlbumCollection.Data
                           ID = 61,
                           Songtitle = "Having a Blast",
                           Duration = "2:54",
+                          AlbumID = 6
 
                       },
                       new Songs()
@@ -557,6 +626,7 @@ namespace AlbumCollection.Data
                           ID = 62,
                           Songtitle = "Chump",
                           Duration = "2:54",
+                          AlbumID = 6
 
                       },
                       new Songs()
@@ -564,6 +634,7 @@ namespace AlbumCollection.Data
                           ID = 63,
                           Songtitle = "Longview",
                           Duration = "3:59",
+                          AlbumID = 6
 
                       },
                       new Songs()
@@ -571,6 +642,7 @@ namespace AlbumCollection.Data
                           ID = 64,
                           Songtitle = "Welcome to Paradise",
                           Duration = "3:44",
+                          AlbumID = 6
 
                       },
                       new Songs()
@@ -578,6 +650,7 @@ namespace AlbumCollection.Data
                           ID = 65,
                           Songtitle = "Pulling Teeth",
                           Duration = "2:31",
+                          AlbumID = 6
 
                       },
                       new Songs()
@@ -585,6 +658,7 @@ namespace AlbumCollection.Data
                           ID = 66,
                           Songtitle = "Basket Case",
                           Duration = "3:01",
+                          AlbumID = 6
 
                       },
                       new Songs()
@@ -592,6 +666,7 @@ namespace AlbumCollection.Data
                           ID = 67,
                           Songtitle = "She",
                           Duration = "2:14",
+                          AlbumID = 6
 
                       },
                       new Songs()
@@ -599,6 +674,7 @@ namespace AlbumCollection.Data
                           ID = 68,
                           Songtitle = "Sassafras Roots",
                           Duration = "2:37",
+                          AlbumID = 6
 
                       },
                       new Songs()
@@ -606,6 +682,7 @@ namespace AlbumCollection.Data
                           ID = 69,
                           Songtitle = "When I Come Around",
                           Duration = "2:58",
+                          AlbumID = 6
 
                       },
                       new Songs()
@@ -613,6 +690,7 @@ namespace AlbumCollection.Data
                           ID = 70,
                           Songtitle = "Coming Clean",
                           Duration = "1:34",
+                          AlbumID = 6
 
                       },
                       new Songs()
@@ -620,6 +698,7 @@ namespace AlbumCollection.Data
                           ID = 71,
                           Songtitle = "Emenius Sleepus",
                           Duration = "1:43",
+                          AlbumID = 6
 
                       },
                       new Songs()
@@ -627,6 +706,7 @@ namespace AlbumCollection.Data
                           ID = 72,
                           Songtitle = "In the End",
                           Duration = "1:46",
+                          AlbumID = 6
 
                       },
                       new Songs()
@@ -634,6 +714,7 @@ namespace AlbumCollection.Data
                           ID = 73,
                           Songtitle = "F.O.D.",
                           Duration = "5:46",
+                          AlbumID = 6
 
                       },
                       new Songs()
@@ -641,13 +722,14 @@ namespace AlbumCollection.Data
                           ID = 74,
                           Songtitle = "Where The Streets Have No Name",
                           Duration = "5:38",
-
+                          AlbumID = 7
                       },
                       new Songs()
                       {
                           ID = 75,
                           Songtitle = "I Still Haven’t Found What I’m Looking For",
                           Duration = "4:38",
+                          AlbumID = 7
 
                       },
                       new Songs()
@@ -655,6 +737,7 @@ namespace AlbumCollection.Data
                           ID = 76,
                           Songtitle = "With or Without You",
                           Duration = "4:56",
+                          AlbumID = 7
 
                       },
                       new Songs()
@@ -662,6 +745,7 @@ namespace AlbumCollection.Data
                           ID = 77,
                           Songtitle = "Bullet the Blue Sky",
                           Duration = "4:32",
+                          AlbumID = 7
 
                       },
                       new Songs()
@@ -669,6 +753,7 @@ namespace AlbumCollection.Data
                           ID = 78,
                           Songtitle = "Running to Stand STill",
                           Duration = "4:18",
+                          AlbumID = 7
 
                       },
                       new Songs()
@@ -676,6 +761,7 @@ namespace AlbumCollection.Data
                           ID = 79,
                           Songtitle = "Red Hill Mining Town",
                           Duration = "4:54",
+                          AlbumID = 7
 
                       },
                       new Songs()
@@ -683,6 +769,7 @@ namespace AlbumCollection.Data
                           ID = 80,
                           Songtitle = "In God’s Country",
                           Duration = "2:57",
+                          AlbumID = 7
 
                       },
                       new Songs()
@@ -690,24 +777,32 @@ namespace AlbumCollection.Data
                           ID = 81,
                           Songtitle = "Trip Through Your Wires",
                           Duration = "3:33",
+                          AlbumID = 7
+
                       },
                       new Songs()
                       {
                           ID = 82,
                           Songtitle = "One Tree Hill",
                           Duration = "5:23",
+                          AlbumID = 7
+
                       },
                       new Songs()
                       {
                           ID = 83,
                           Songtitle = "Exit",
                           Duration = "4:13",
+                          AlbumID = 7
+
                       },
                       new Songs()
                       {
                           ID = 84,
                           Songtitle = "Mothers of the Disappeared",
                           Duration = "5:12",
+                          AlbumID = 7
+
                       }
 
                     );
