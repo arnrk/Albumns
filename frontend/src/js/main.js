@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Album from "./components/Album";
 import Artist from "./components/Artist";
 import Song from "./components/Song";
+import apiActrion from "./api/apiAction";
 
 export default () => {
     pageBuild();
@@ -11,9 +12,9 @@ export default () => {
 function pageBuild(){
     header();
     footer();
-    album();
-    artist();
-    song();
+    navAlbum();
+    navArtist();
+    navSong();
 }
 
 function header(){
@@ -27,17 +28,86 @@ function footer(){
     footer.innerHTML = Footer();
 }
 
-function album(){
-    const album = document.getElementById("album")
-    album.innerHTML = Album();
+function navAlbum(){
+    const albumButton = document.querySelector(".albums");
+    
+    albumButton.addEventListener("click", function(){
+        apiActions.getRequest("https://localhost:44385/api/todos", albums => {
+            document.querySelector("#app").innerHTML = Album(albums);
+        });
+    });
+
+    const app = document.querySelector("#app");
+    app.addEventListener("click", function(){
+        if(event.target.classList.contains("add-album__submit")) {
+            const album = event.target.parentElement.querySelector(
+                ".add-album__toDoName"
+            ).value;
+
+            console.log(album);
+            apiActions.postRequest("https://localhost:44385/api/todos",
+            album,
+            albums =>{
+                console.log(albums);
+                document.querySelector("#app").innerHTML = Album(albums)
+            })
+        }
+    })
+
 }
 
-function artist(){
-    const album = document.getElementById("artist")
-    album.innerHTML = Artist();
+function navArtist(){
+    const artistButton = document.querySelector("artists");
+    
+    artistButton.addEventListener("click", function(){
+        apiActions.getRequest("https://localhost:44385/api/todos", artists => {
+            document.querySelector("#app").innerHTML = Artist(artists);
+        });
+    });
+
+    const app = document.querySelector("#app");
+    app.addEventListener("click", function(){
+        if(event.target.classList.contains("add-artist__submit")) {
+            const artist = event.target.parentElement.querySelector(
+                ".add-artist__toDoName"
+            ).value;
+
+            console.log(artist);
+            apiActions.postRequest("https://localhost:44385/api/todos",
+            artist,
+            artists =>{
+                console.log(artists);
+                document.querySelector("#app").innerHTML = Artist(artists)
+            })
+        }
+    })
+
 }
 
-function song(){
-    const album = document.getElementById("song")
-    album.innerHTML = Song();
+function navSong(){
+    const songButton = document.querySelector("songs");
+    
+    songButton.addEventListener("click", function(){
+        apiActions.getRequest("https://localhost:44385/api/todos", songs => {
+            document.querySelector("#app").innerHTML = Song(songs);
+        });
+    });
+
+    const app = document.querySelector("#app");
+    app.addEventListener("click", function(){
+        if(event.target.classList.contains("add-song__submit")) {
+            const song = event.target.parentElement.querySelector(
+                ".add-song__toDoName"
+            ).value;
+
+            console.log(song);
+            apiActions.postRequest("https://localhost:44385/api/todos",
+            song,
+            songs =>{
+                console.log(songs);
+                document.querySelector("#app").innerHTML = Song(songs)
+            })
+        }
+    })
+
 }
