@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AlbumCollection.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/album")]
     [ApiController]
     public class AlbumController : ControllerBase
     {
@@ -27,10 +27,16 @@ namespace AlbumCollection.Controllers
         }
 
         // GET api/album/5
-        [HttpGet("{id}")]
+        [HttpGet]
         public IEnumerable<Albums> Get()
         {
             return albumRepo.GetAll();
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult<string> Get(int id)
+        {
+            return "album";
         }
 
         // POST api/album
