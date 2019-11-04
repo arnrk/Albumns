@@ -5,7 +5,7 @@ export default function Artist(artists) {
       .map(artist => {
         return `
             <li>
-                <h3>${artist}</h3>
+                <h3>${artist.name}</h3>
             </li>
         `;
       })

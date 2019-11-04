@@ -46,7 +46,9 @@ function navAlbum(){
 
             console.log(album);
             apiAction.postRequest("https://localhost:44397/api/album",
-            album,
+            {
+                name: album
+            },
             albums =>{
                 console.log(albums);
                 document.querySelector("#app").innerHTML = Album(albums)
@@ -74,7 +76,9 @@ function navArtist(){
 
             console.log(artist);
             apiAction.postRequest("https://localhost:44397/api/artist",
-            artist,
+            {
+                name: artist
+            },
             artists =>{
                 console.log(artists);
                 document.querySelector("#app").innerHTML = Artist(artists)
@@ -102,7 +106,9 @@ function navSong(){
 
             console.log(song);
             apiAction.postRequest("https://localhost:44397/api/song",
-            song,
+            {
+                name: song
+            },
             songs =>{
                 console.log(songs);
                 document.querySelector("#app").innerHTML = Song(songs)
