@@ -32,11 +32,7 @@ function navAlbum(){
     const albumButton = document.querySelector(".albums");
     
     albumButton.addEventListener("click", function(){
-<<<<<<< Updated upstream
-        apiActions.getRequest("https://localhost:44385/api/todos", albums => {
-=======
         apiActions.getRequest("https://localhost:44397/api/album", albums => {
->>>>>>> Stashed changes
             document.querySelector("#app").innerHTML = Album(albums);
         });
     });
@@ -49,11 +45,7 @@ function navAlbum(){
             ).value;
 
             console.log(album);
-<<<<<<< Updated upstream
-            apiActions.postRequest("https://localhost:44385/api/todos",
-=======
             apiActions.postRequest("https://localhost:44397/api/album",
->>>>>>> Stashed changes
             album,
             albums =>{
                 console.log(albums);
