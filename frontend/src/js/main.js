@@ -32,7 +32,11 @@ function navAlbum(){
     const albumButton = document.querySelector(".albums");
     
     albumButton.addEventListener("click", function(){
+<<<<<<< Updated upstream
         apiActions.getRequest("https://localhost:44385/api/todos", albums => {
+=======
+        apiActions.getRequest("https://localhost:44397/api/album", albums => {
+>>>>>>> Stashed changes
             document.querySelector("#app").innerHTML = Album(albums);
         });
     });
@@ -45,7 +49,11 @@ function navAlbum(){
             ).value;
 
             console.log(album);
+<<<<<<< Updated upstream
             apiActions.postRequest("https://localhost:44385/api/todos",
+=======
+            apiActions.postRequest("https://localhost:44397/api/album",
+>>>>>>> Stashed changes
             album,
             albums =>{
                 console.log(albums);
@@ -60,7 +68,7 @@ function navArtist(){
     const artistButton = document.querySelector("artists");
     
     artistButton.addEventListener("click", function(){
-        apiActions.getRequest("https://localhost:44385/api/todos", artists => {
+        apiActions.getRequest("https://localhost:44397/api/artist", artists => {
             document.querySelector("#app").innerHTML = Artist(artists);
         });
     });
@@ -73,7 +81,7 @@ function navArtist(){
             ).value;
 
             console.log(artist);
-            apiActions.postRequest("https://localhost:44385/api/todos",
+            apiActions.postRequest("https://localhost:44397/api/artist",
             artist,
             artists =>{
                 console.log(artists);
@@ -88,7 +96,7 @@ function navSong(){
     const songButton = document.querySelector("songs");
     
     songButton.addEventListener("click", function(){
-        apiActions.getRequest("https://localhost:44385/api/todos", songs => {
+        apiActions.getRequest("hhttps://localhost:44397/api/song", songs => {
             document.querySelector("#app").innerHTML = Song(songs);
         });
     });
@@ -101,7 +109,7 @@ function navSong(){
             ).value;
 
             console.log(song);
-            apiActions.postRequest("https://localhost:44385/api/todos",
+            apiActions.postRequest("https://localhost:44397/api/song",
             song,
             songs =>{
                 console.log(songs);
