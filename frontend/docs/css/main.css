@@ -1,0 +1,37 @@
+body {
+    background-image: url("../images/coffeeshop.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    color: white;
+}
+
+#catagories{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    border: 3em;
+}
+
+#header{
+
+}
+
+#footer{
+
+}
+
+#artist{
+
+}
+
+#album{
+
+}
+
+#song{
+
+}

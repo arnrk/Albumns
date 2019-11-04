@@ -10,17 +10,18 @@ namespace AlbumCollection.Models
 
         public int ID { get; set; }
         public string Name { get; set; }
-        public string Age { get; set; }
+        public int Age { get; set; }
         public string Recordlabel { get; set; }
         public string Hometown { get; set; }
-   
+
+        public virtual ICollection<Albums> Albums { get; set; }
 
         public Artists()
         {
         }
 
 
-        public Artists(int id, string name, string age, string recordLabel, string hometown)
+        public Artists(int id, string name, int age, string recordLabel, string hometown)
         {
         ID = id;
         Name = name;

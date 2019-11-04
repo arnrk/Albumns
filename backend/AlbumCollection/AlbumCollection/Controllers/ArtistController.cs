@@ -2,32 +2,50 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AlbumCollection.Models;
+using AlbumCollection.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AlbumCollection.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/artist")]
     [ApiController]
-    public class Artist : ControllerBase
+    public class ArtistController : ControllerBase
     {
-        // GET api/Artist
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        // GET api/Album
+        //[HttpGet]
+        //public ActionResult<IEnumerable<string>> Get()
+        //{
+        //    return new string[] { "album1", "album2" };
+        //}
+
+        private IRepository<Artists> artistRepo;
+
+        public ArtistController(IRepository<Artists> artistRepo)
         {
-            return new string[] { "artist1", "artist2" };
+            this.artistRepo = artistRepo;
         }
 
-        // GET api/Artist/5
+        // GET api/album/5
+        [HttpGet]
+        public IEnumerable<Artists> Get()
+        {
+            return artistRepo.GetAll();
+        }
+
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "Artist";
+            return "artist";
         }
+
 
         // POST api/artist
         [HttpPost]
-        public void Post([FromBody] string Artist)
+        public IEnumerable<Artists> Post([FromBody] Artists artists)
         {
+            artistRepo.Create(artists);
+            return artistRepo.GetAll();
         }
 
         // PUT api/artist/5
