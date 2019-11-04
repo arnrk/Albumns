@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import Album from "./components/Album";
 import Artist from "./components/Artist";
 import Song from "./components/Song";
-import apiActions from "./api/apiAction";
+import apiAction from "./api/apiAction";
 
 export default () => {
     pageBuild();
@@ -32,7 +32,7 @@ function navAlbum(){
     const albumButton = document.querySelector(".albums");
     
     albumButton.addEventListener("click", function(){
-        apiActions.getRequest("https://localhost:44397/api/album", albums => {
+        apiAction.getRequest("https://localhost:44397/api/album", albums => {
             document.querySelector("#app").innerHTML = Album(albums);
         });
     });
@@ -41,11 +41,11 @@ function navAlbum(){
     app.addEventListener("click", function(){
         if(event.target.classList.contains("add-album__submit")) {
             const album = event.target.parentElement.querySelector(
-                ".add-album__toDoName"
+                ".add-album__albumName"
             ).value;
 
             console.log(album);
-            apiActions.postRequest("https://localhost:44397/api/album",
+            apiAction.postRequest("https://localhost:44397/api/album",
             album,
             albums =>{
                 console.log(albums);
@@ -57,10 +57,10 @@ function navAlbum(){
 }
 
 function navArtist(){
-    const artistButton = document.querySelector("artists");
+    const artistButton = document.querySelector(".artists");
     
     artistButton.addEventListener("click", function(){
-        apiActions.getRequest("https://localhost:44397/api/artist", artists => {
+        apiAction.getRequest("https://localhost:44397/api/artist", artists => {
             document.querySelector("#app").innerHTML = Artist(artists);
         });
     });
@@ -69,11 +69,11 @@ function navArtist(){
     app.addEventListener("click", function(){
         if(event.target.classList.contains("add-artist__submit")) {
             const artist = event.target.parentElement.querySelector(
-                ".add-artist__toDoName"
+                ".add-artist__artistName"
             ).value;
 
             console.log(artist);
-            apiActions.postRequest("https://localhost:44397/api/artist",
+            apiAction.postRequest("https://localhost:44397/api/artist",
             artist,
             artists =>{
                 console.log(artists);
@@ -85,10 +85,10 @@ function navArtist(){
 }
 
 function navSong(){
-    const songButton = document.querySelector("songs");
+    const songButton = document.querySelector(".songs");
     
     songButton.addEventListener("click", function(){
-        apiActions.getRequest("hhttps://localhost:44397/api/song", songs => {
+        apiAction.getRequest("https://localhost:44397/api/song", songs => {
             document.querySelector("#app").innerHTML = Song(songs);
         });
     });
@@ -97,11 +97,11 @@ function navSong(){
     app.addEventListener("click", function(){
         if(event.target.classList.contains("add-song__submit")) {
             const song = event.target.parentElement.querySelector(
-                ".add-song__toDoName"
+                ".add-song__songName"
             ).value;
 
             console.log(song);
-            apiActions.postRequest("https://localhost:44397/api/song",
+            apiAction.postRequest("https://localhost:44397/api/song",
             song,
             songs =>{
                 console.log(songs);
