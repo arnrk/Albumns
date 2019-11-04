@@ -85,14 +85,14 @@ namespace AlbumCollection.Data
                 new Albums()
                 {
                     ID = 1,
-                    Title = "Indicud",
+                    Name ="Indicud",
                     Recordlabel = "Wicked Awesome",
                     ArtistID = 1
                 },
                 new Albums()
                 {
                     ID = 2,
-                    Title = "Sports",
+                    Name ="Sports",
                     Recordlabel = "Chrysalis Records",
                     ArtistID = 2
 
@@ -100,35 +100,35 @@ namespace AlbumCollection.Data
                 new Albums()
                 {
                     ID = 3,
-                    Title = "2014 Forest Hills Drive",
+                    Name ="2014 Forest Hills Drive",
                     Recordlabel = "Dreamville",
                     ArtistID = 3
                 },
                 new Albums()
                 {
                     ID = 4,
-                    Title = "Wandered Away",
+                    Name ="Wandered Away",
                     Recordlabel = "Half Awake",
                     ArtistID = 4
                 },
                 new Albums()
                 {
                     ID = 5,
-                    Title = "Smash",
+                    Name ="Smash",
                     Recordlabel = "Nitro Records",
                     ArtistID = 5
                 },
                 new Albums()
                 {
                     ID = 6,
-                    Title = "Dookie",
+                    Name ="Dookie",
                     Recordlabel = "Lookout!",
                     ArtistID = 6
                 },
                 new Albums()
                 {
                     ID = 7,
-                    Title = "Joshua Tree",
+                    Name ="Joshua Tree",
                     Recordlabel = "Island Records",
                     ArtistID = 7
                 }
@@ -138,14 +138,14 @@ namespace AlbumCollection.Data
                 new Songs()
                 {
                     ID = 1,
-                    Songtitle = "the resurrection of scott mescud",
+                    Name = "the resurrection of scott mescud",
                     Duration = "2:40",
                     AlbumID = 1
                 },
                 new Songs()
                 {
                     ID = 2,
-                    Songtitle = "Unfuckwittable",
+                    Name = "Unfuckwittable",
                     Duration = "4:35",
                     AlbumID = 1
 
@@ -153,7 +153,7 @@ namespace AlbumCollection.Data
                  new Songs()
                  {
                      ID = 3,
-                     Songtitle = "Just What I Am",
+                     Name = "Just What I Am",
                      Duration = "3:48",
                      AlbumID = 1
 
@@ -161,7 +161,7 @@ namespace AlbumCollection.Data
                   new Songs()
                   {
                       ID = 4,
-                      Songtitle = "Young Lady",
+                      Name = "Young Lady",
                       Duration = "4:24",
                       AlbumID = 1
 
@@ -169,7 +169,7 @@ namespace AlbumCollection.Data
                    new Songs()
                    {
                        ID = 5,
-                       Songtitle = "King Wizard",
+                       Name = "King Wizard",
                        Duration = "4:16",
                        AlbumID = 1
 
@@ -177,7 +177,7 @@ namespace AlbumCollection.Data
                     new Songs()
                     {
                         ID = 6,
-                        Songtitle = "Immortal ",
+                        Name = "Immortal ",
                         Duration = "5:01",
                         AlbumID = 1
 
@@ -185,7 +185,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 7,
-                          Songtitle = "Solo Duo, Part II ",
+                          Name = "Solo Duo, Part II ",
                           Duration = "3:34",
                           AlbumID = 1
 
@@ -193,7 +193,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 8,
-                          Songtitle = "Girls",
+                          Name = "Girls",
                           Duration = "4:27",
                           AlbumID = 1
 
@@ -201,7 +201,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 9,
-                          Songtitle = "New York City Rage Fest ",
+                          Name = "New York City Rage Fest ",
                           Duration = "1:53",
                           AlbumID = 1
 
@@ -209,7 +209,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 10,
-                          Songtitle = "Red Eye ",
+                          Name = "Red Eye ",
                           Duration = "3:54",
                           AlbumID = 1
 
@@ -217,7 +217,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 11,
-                          Songtitle = "Mad solar ",
+                          Name = "Mad solar ",
                           Duration = "4:08",
                           AlbumID = 1
 
@@ -225,7 +225,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 12,
-                          Songtitle = "Beez",
+                          Name = "Beez",
                           Duration = "3:13",
                           AlbumID = 1
 
@@ -233,7 +233,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 13,
-                          Songtitle = "Brothers",
+                          Name = "Brothers",
                           Duration = "4:41",
                           AlbumID = 1
 
@@ -241,7 +241,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 14,
-                          Songtitle = "Burn Baby Burn",
+                          Name = "Burn Baby Burn",
                           Duration = "2:58",
                           AlbumID = 1
 
@@ -249,7 +249,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 15,
-                          Songtitle = "Lord of the Sad and Lonely",
+                          Name = "Lord of the Sad and Lonely",
                           Duration = "2:46",
                           AlbumID = 1
 
@@ -257,7 +257,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 16,
-                          Songtitle = "Cold Blooded",
+                          Name = "Cold Blooded",
                           Duration = "2:32",
                           AlbumID = 1
 
@@ -265,7 +265,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 17,
-                          Songtitle = "Afterwards (Bring yo Friends)",
+                          Name = "Afterwards (Bring yo Friends)",
                           Duration = "9:03",
                           AlbumID = 1
 
@@ -273,7 +273,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 18,
-                          Songtitle = "The Flight of the Moon Man",
+                          Name = "The Flight of the Moon Man",
                           Duration = "2:51",
                           AlbumID = 1
 
@@ -281,7 +281,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 19,
-                          Songtitle = "The Heart Of Rock And Roll",
+                          Name = "The Heart Of Rock And Roll",
                           Duration = "5:05",
                           AlbumID = 2
 
@@ -289,7 +289,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 20,
-                          Songtitle = "Heart And Soul",
+                          Name = "Heart And Soul",
                           Duration = "4:13",
                           AlbumID = 2
 
@@ -297,7 +297,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 21,
-                          Songtitle = "Bad Is Bad",
+                          Name = "Bad Is Bad",
                           Duration = "3:48",
                           AlbumID = 2
 
@@ -305,7 +305,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 22,
-                          Songtitle = "I Want A New Drug",
+                          Name = "I Want A New Drug",
                           Duration = "4:46",
                           AlbumID = 2
 
@@ -313,7 +313,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 23,
-                          Songtitle = "Walking On A Thin Line",
+                          Name = "Walking On A Thin Line",
                           Duration = "5:11",
                           AlbumID = 2
 
@@ -321,7 +321,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 24,
-                          Songtitle = "Finally Found A Home",
+                          Name = "Finally Found A Home",
                           Duration = "3:53",
                           AlbumID = 2
 
@@ -329,7 +329,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 25,
-                          Songtitle = "If This Is It",
+                          Name = "If This Is It",
                           Duration = "3:53",
                           AlbumID = 2
 
@@ -337,7 +337,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 26,
-                          Songtitle = "You Crack Me Up",
+                          Name = "You Crack Me Up",
                           Duration = "3:43",
                           AlbumID = 2
 
@@ -345,7 +345,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 27,
-                          Songtitle = "Honky Tonk Blues",
+                          Name = "Honky Tonk Blues",
                           Duration = "3:21",
                           AlbumID = 2
 
@@ -353,7 +353,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 28,
-                          Songtitle = "Intro",
+                          Name = "Intro",
                           Duration = "2:09",
                           AlbumID = 3
 
@@ -361,7 +361,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 29,
-                          Songtitle = "January 28th",
+                          Name = "January 28th",
                           Duration = "4:02",
                           AlbumID = 3
 
@@ -369,7 +369,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 30,
-                          Songtitle = "Wet Dreamz",
+                          Name = "Wet Dreamz",
                           Duration = "3:59",
                           AlbumID = 3
 
@@ -377,7 +377,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 31,
-                          Songtitle = "03' Adolescence",
+                          Name = "03' Adolescence",
                           Duration = "4:24",
                           AlbumID = 3
 
@@ -385,7 +385,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 32,
-                          Songtitle = "A Tale of 2 Citiez",
+                          Name = "A Tale of 2 Citiez",
                           Duration = "4:29",
                           AlbumID = 3
 
@@ -393,7 +393,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 33,
-                          Songtitle = "Fire Squad",
+                          Name = "Fire Squad",
                           Duration = "4:48",
                           AlbumID = 3
 
@@ -401,7 +401,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 34,
-                          Songtitle = "St. Tropez",
+                          Name = "St. Tropez",
                           Duration = "4:17",
                           AlbumID = 3
 
@@ -409,7 +409,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 35,
-                          Songtitle = "G.O.M.D.",
+                          Name = "G.O.M.D.",
                           Duration = "5:01",
                           AlbumID = 3
 
@@ -417,7 +417,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 36,
-                          Songtitle = "No Role Modelz",
+                          Name = "No Role Modelz",
                           Duration = "4:52",
                           AlbumID = 3
 
@@ -425,7 +425,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 37,
-                          Songtitle = "Hello",
+                          Name = "Hello",
                           Duration = "3:39",
                           AlbumID = 3
 
@@ -433,7 +433,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 38,
-                          Songtitle = "Apparently",
+                          Name = "Apparently",
                           Duration = "4:53",
                           AlbumID = 3
 
@@ -441,7 +441,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 39,
-                          Songtitle = "Love Yourz",
+                          Name = "Love Yourz",
                           Duration = "3:31",
                           AlbumID = 3
 
@@ -449,7 +449,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 40,
-                          Songtitle = "Note to Self",
+                          Name = "Note to Self",
                           Duration = "14:35",
                           AlbumID = 3
 
@@ -457,14 +457,14 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 41,
-                          Songtitle = "I Never Really",
+                          Name = "I Never Really",
                           Duration = "4:15",
                           AlbumID = 4
                       },
                       new Songs()
                       {
                           ID = 42,
-                          Songtitle = "My Soul I",
+                          Name = "My Soul I",
                           Duration = "3:59",
                           AlbumID = 4
 
@@ -472,7 +472,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 43,
-                          Songtitle = "Wandered Away",
+                          Name = "Wandered Away",
                           Duration = "3:45",
                           AlbumID = 4
 
@@ -480,7 +480,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 44,
-                          Songtitle = "If You Only",
+                          Name = "If You Only",
                           Duration = "3:05",
                           AlbumID = 4
 
@@ -488,7 +488,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 45,
-                          Songtitle = "Into the Cold",
+                          Name = "Into the Cold",
                           Duration = "3:48",
                           AlbumID = 4
 
@@ -496,7 +496,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 46,
-                          Songtitle = "Time to Relax",
+                          Name = "Time to Relax",
                           Duration = "0:25",
                           AlbumID = 5
 
@@ -504,7 +504,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 47,
-                          Songtitle = "Nitro",
+                          Name = "Nitro",
                           Duration = "2:27",
                           AlbumID = 5
 
@@ -512,7 +512,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 48,
-                          Songtitle = "Bad Habit",
+                          Name = "Bad Habit",
                           Duration = "3:52",
                           AlbumID = 5
 
@@ -520,7 +520,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 49,
-                          Songtitle = "Gotta Get Away",
+                          Name = "Gotta Get Away",
                           Duration = "3:52",
                           AlbumID = 5
 
@@ -528,7 +528,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 50,
-                          Songtitle = "Genocide",
+                          Name = "Genocide",
                           Duration = "3:33",
                           AlbumID = 5
 
@@ -536,7 +536,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 51,
-                          Songtitle = "Something to Believe In",
+                          Name = "Something to Believe In",
                           Duration = "3:17",
                           AlbumID = 5
 
@@ -544,7 +544,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 52,
-                          Songtitle = "Come Out and Play",
+                          Name = "Come Out and Play",
                           Duration = "3:17",
                           AlbumID = 5
 
@@ -552,7 +552,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 53,
-                          Songtitle = "Self Esteem",
+                          Name = "Self Esteem",
                           Duration = "4:17",
                           AlbumID = 5
 
@@ -560,7 +560,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 54,
-                          Songtitle = "It’ll Be a Long Time",
+                          Name = "It’ll Be a Long Time",
                           Duration = "2:43",
                           AlbumID = 5
 
@@ -568,7 +568,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 55,
-                          Songtitle = "Killboy Powerhead",
+                          Name = "Killboy Powerhead",
                           Duration = "2:02",
                           AlbumID = 5
 
@@ -576,7 +576,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 56,
-                          Songtitle = "What Happened to You?",
+                          Name = "What Happened to You?",
                           Duration = "2:12",
                           AlbumID = 5
 
@@ -584,7 +584,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 57,
-                          Songtitle = "So Alone",
+                          Name = "So Alone",
                           Duration = "1:17",
                           AlbumID = 5
 
@@ -592,7 +592,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 58,
-                          Songtitle = "Not the One",
+                          Name = "Not the One",
                           Duration = "2:54",
                           AlbumID = 5
 
@@ -600,7 +600,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 59,
-                          Songtitle = "Smash",
+                          Name = "Smash",
                           Duration = "10:42",
                           AlbumID = 5
 
@@ -608,7 +608,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 60,
-                          Songtitle = "Burnou",
+                          Name = "Burnou",
                           Duration = "2:07",
                           AlbumID = 6
 
@@ -616,7 +616,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 61,
-                          Songtitle = "Having a Blast",
+                          Name = "Having a Blast",
                           Duration = "2:54",
                           AlbumID = 6
 
@@ -624,7 +624,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 62,
-                          Songtitle = "Chump",
+                          Name = "Chump",
                           Duration = "2:54",
                           AlbumID = 6
 
@@ -632,7 +632,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 63,
-                          Songtitle = "Longview",
+                          Name = "Longview",
                           Duration = "3:59",
                           AlbumID = 6
 
@@ -640,7 +640,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 64,
-                          Songtitle = "Welcome to Paradise",
+                          Name = "Welcome to Paradise",
                           Duration = "3:44",
                           AlbumID = 6
 
@@ -648,7 +648,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 65,
-                          Songtitle = "Pulling Teeth",
+                          Name = "Pulling Teeth",
                           Duration = "2:31",
                           AlbumID = 6
 
@@ -656,7 +656,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 66,
-                          Songtitle = "Basket Case",
+                          Name = "Basket Case",
                           Duration = "3:01",
                           AlbumID = 6
 
@@ -664,7 +664,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 67,
-                          Songtitle = "She",
+                          Name = "She",
                           Duration = "2:14",
                           AlbumID = 6
 
@@ -672,7 +672,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 68,
-                          Songtitle = "Sassafras Roots",
+                          Name = "Sassafras Roots",
                           Duration = "2:37",
                           AlbumID = 6
 
@@ -680,7 +680,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 69,
-                          Songtitle = "When I Come Around",
+                          Name = "When I Come Around",
                           Duration = "2:58",
                           AlbumID = 6
 
@@ -688,7 +688,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 70,
-                          Songtitle = "Coming Clean",
+                          Name = "Coming Clean",
                           Duration = "1:34",
                           AlbumID = 6
 
@@ -696,7 +696,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 71,
-                          Songtitle = "Emenius Sleepus",
+                          Name = "Emenius Sleepus",
                           Duration = "1:43",
                           AlbumID = 6
 
@@ -704,7 +704,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 72,
-                          Songtitle = "In the End",
+                          Name = "In the End",
                           Duration = "1:46",
                           AlbumID = 6
 
@@ -712,7 +712,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 73,
-                          Songtitle = "F.O.D.",
+                          Name = "F.O.D.",
                           Duration = "5:46",
                           AlbumID = 6
 
@@ -720,14 +720,14 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 74,
-                          Songtitle = "Where The Streets Have No Name",
+                          Name = "Where The Streets Have No Name",
                           Duration = "5:38",
                           AlbumID = 7
                       },
                       new Songs()
                       {
                           ID = 75,
-                          Songtitle = "I Still Haven’t Found What I’m Looking For",
+                          Name = "I Still Haven’t Found What I’m Looking For",
                           Duration = "4:38",
                           AlbumID = 7
 
@@ -735,7 +735,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 76,
-                          Songtitle = "With or Without You",
+                          Name = "With or Without You",
                           Duration = "4:56",
                           AlbumID = 7
 
@@ -743,7 +743,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 77,
-                          Songtitle = "Bullet the Blue Sky",
+                          Name = "Bullet the Blue Sky",
                           Duration = "4:32",
                           AlbumID = 7
 
@@ -751,7 +751,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 78,
-                          Songtitle = "Running to Stand STill",
+                          Name = "Running to Stand STill",
                           Duration = "4:18",
                           AlbumID = 7
 
@@ -759,7 +759,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 79,
-                          Songtitle = "Red Hill Mining Town",
+                          Name = "Red Hill Mining Town",
                           Duration = "4:54",
                           AlbumID = 7
 
@@ -767,7 +767,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 80,
-                          Songtitle = "In God’s Country",
+                          Name = "In God’s Country",
                           Duration = "2:57",
                           AlbumID = 7
 
@@ -775,7 +775,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 81,
-                          Songtitle = "Trip Through Your Wires",
+                          Name = "Trip Through Your Wires",
                           Duration = "3:33",
                           AlbumID = 7
 
@@ -783,7 +783,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 82,
-                          Songtitle = "One Tree Hill",
+                          Name = "One Tree Hill",
                           Duration = "5:23",
                           AlbumID = 7
 
@@ -791,7 +791,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 83,
-                          Songtitle = "Exit",
+                          Name = "Exit",
                           Duration = "4:13",
                           AlbumID = 7
 
@@ -799,7 +799,7 @@ namespace AlbumCollection.Data
                       new Songs()
                       {
                           ID = 84,
-                          Songtitle = "Mothers of the Disappeared",
+                          Name = "Mothers of the Disappeared",
                           Duration = "5:12",
                           AlbumID = 7
 

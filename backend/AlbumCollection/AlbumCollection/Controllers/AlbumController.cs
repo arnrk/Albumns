@@ -26,13 +26,13 @@ namespace AlbumCollection.Controllers
             this.albumRepo = albumRepo;
         }
 
-        // GET api/album/5
         [HttpGet]
         public IEnumerable<Albums> Get()
         {
             return albumRepo.GetAll();
         }
 
+        // GET api/album/5
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {

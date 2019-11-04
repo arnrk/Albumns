@@ -5,7 +5,7 @@ export default function Album(albums) {
       .map(album => {
         return `
             <li>
-                <h3>${album.title}</h3>
+                <h3>${album.name}</h3>
             </li>
         `;
       })
