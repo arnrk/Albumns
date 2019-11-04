@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import Album from "./components/Album";
 import Artist from "./components/Artist";
 import Song from "./components/Song";
-import apiActrion from "./api/apiAction";
+import apiActions from "./api/apiAction";
 
 export default () => {
     pageBuild();
