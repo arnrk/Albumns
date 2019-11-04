@@ -5,7 +5,7 @@ export default function Song(songs) {
       .map(song => {
         return `
             <li>
-                <h3>${song.songtitle}</h3>
+                <h3>${song.name}</h3>
             </li>
         `;
       })
