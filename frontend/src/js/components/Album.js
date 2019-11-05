@@ -6,9 +6,11 @@ export default function Album(albums) {
         return `
             <li>
                 <h3>${album.name}</h3>
+
                 <input class="album__id" type="hidden" value="${album.id}">
                     <button class="edit-album__submit">Edit</button>
                     <button class="delete-album__submit">Delete</button>
+
             </li>
         `;
       })
@@ -17,7 +19,7 @@ export default function Album(albums) {
   
   <section class='add-album'>
     <input class='add-album__albumName' type='text' placeholder='Add a album!'>
-    <button class='add-album__submit'>Submit</button>
+    <button class='add-album__submit'id = "button">Submit</button>
   </section>
   `;
 }

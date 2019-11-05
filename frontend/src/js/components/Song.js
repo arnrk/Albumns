@@ -5,10 +5,14 @@ export default function Song(songs) {
       .map(song => {
         return `
             <li>
-                <h3>${song.songtitle}</h3>
+
+                <h3>${song.name}</h3>
                 <input class="song__id" type="hidden" value="${song.id}">
                       <button class="edit-song__submit">Edit</button>
                       <button class="delete-song__submit">Delete</button>
+
+                
+
             </li>
         `;
       })
@@ -17,7 +21,7 @@ export default function Song(songs) {
   
   <section class='add-song'>
     <input class='add-song__songName' type='text' placeholder='Add a song!'>
-    <button class='add-song__submit'>Submit</button>
+    <button class='add-song__submit' id = "button">Submit</button>
   </section>
   `;
 }

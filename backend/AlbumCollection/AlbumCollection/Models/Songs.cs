@@ -8,7 +8,7 @@ namespace AlbumCollection.Models
     public class Songs
     {
         public int ID { get; set; }
-        public string Songtitle { get; set; }
+        public string Name { get; set; }
         public string Duration { get; set; }
 
         public virtual int AlbumID { get; set; }
@@ -18,10 +18,10 @@ namespace AlbumCollection.Models
         {
         }
 
-        public Songs(int id, string title, string duration, int albumID)
+        public Songs(int id, string name, string duration, int albumID)
         {
             ID = id;
-            Songtitle = title;
+            Name = name;
             Duration = duration;
             AlbumID = albumID;
         }

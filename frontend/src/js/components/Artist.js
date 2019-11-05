@@ -17,7 +17,7 @@ export default function Artist(artists) {
   
   <section class='add-artist'>
     <input class='add-artist__artistName' type='text' placeholder='Add a artist!'>
-    <button class='add-artist__submit'>Submit</button>
+    <button class='add-artist__submit' id = "button">Submit</button>
   </section>
   `;
 }
