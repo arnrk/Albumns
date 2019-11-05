@@ -4,7 +4,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    color: white;
+    color: rgb(24, 23, 23);
 }
 
 #catagories{
@@ -16,12 +16,70 @@ body {
     border: 3em;
 }
 
-#header{
+
+#displayOne{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    min-height: 250px;
+    width: 90%;
+    background-color:rgb(245, 245, 245);
+    opacity: .75;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%
+
 
 }
 
-#footer{
 
+#header{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    height: auto;
+    width: 90%;
+    background-color:rgb(211, 209, 209);
+    padding-left: 5%;
+    padding-right: 5%
+    
+}
+
+#button {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background-color:rgb(202, 202, 202);
+    opacity: 1;
+    margin-top: 2rem;
+}
+
+input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
 }
 
 #artist{
