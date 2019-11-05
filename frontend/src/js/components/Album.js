@@ -10,7 +10,6 @@ export default function Album(albums) {
                 <input class="album__id" type="hidden" value="${album.id}">
                     <button class="edit-album__submit">Edit</button>
                     <button class="delete-album__submit">Delete</button>
-
             </li>
         `;
       })

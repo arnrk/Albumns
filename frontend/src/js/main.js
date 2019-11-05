@@ -154,4 +154,100 @@ function navSong(){
             })
         }
     })
+
+    app.addEventListener("click", function(){
+        if(event.target.classList.contains("edit-album__submit")) {
+            const albumId = event.target.parentElement.querySelector(".album__id")
+                .value;
+            console.log("edit " + albumId);
+            apiAction.getRequest(`https://localhost:44397/api/album/${albumId}`, 
+            album => {
+            document.querySelector("#app").innerHTML = EditAlbum(album);
+            })
+        }
+    })
+
+    app.addEventListener("click", function(){
+        if(event.target.classList.contains("edit-artist__submit")) {
+            const artistId = event.target.parentElement.querySelector(".artist__id")
+                .value;
+            console.log("edit " + artistId);
+            apiAction.getRequest(`https://localhost:44397/api/artist/${artistId}`, 
+            artist => {
+            document.querySelector("#app").innerHTML = EditArtist(artist);
+            })
+        }
+    })
+
+    app.addEventListener("click", function(){
+        if(event.target.classList.contains("edit-song__submit")) {
+            const songId = event.target.parentElement.querySelector(".song__id")
+                .value;
+            console.log("edit " + songId);
+            apiAction.getRequest(`https://localhost:44397/api/song/${songId}`, 
+            song => {
+            document.querySelector("#app").innerHTML = EditSong(song);
+            })
+        }
+    })
+
+    app.addEventListener("click", function(){
+        if(event.target.classList.contains("update-album__submit")) {
+            const albumId = event.target.parentElement.querySelector(".update-album__id")
+                .value;
+            const albumName = event.target.parentElement.querySelector(".update-album__name")
+                .value;
+            
+            const albumData = {
+                id: albumId,
+                name: albumName
+            }
+            apiAction.putRequest(`https://localhost:44397/api/album/${albumId}`,
+            albumData,
+            album => {
+                document.querySelector("#app").innerHTML = Album(album)
+            }
+            );
+        }
+    })
+
+    app.addEventListener("click", function(){
+        if(event.target.classList.contains("update-artist__submit")) {
+            const artistId = event.target.parentElement.querySelector(".update-artist__id")
+                .value;
+            const artistName = event.target.parentElement.querySelector(".update-artist__name")
+                .value;
+            
+            const artistData = {
+                id: artistId,
+                name: artistName
+            }
+            apiAction.putRequest(`https://localhost:44397/api/artist/${artistId}`,
+            artistData,
+            artist => {
+                document.querySelector("#app").innerHTML = Artist(artist)
+            }
+            );
+        }
+    })
+
+    app.addEventListener("click", function(){
+        if(event.target.classList.contains("update-song__submit")) {
+            const songId = event.target.parentElement.querySelector(".update-song__id")
+                .value;
+            const songName = event.target.parentElement.querySelector(".update-song__name")
+                .value;
+            
+            const songData = {
+                id: songId,
+                name: songName
+            }
+            apiAction.putRequest(`https://localhost:44397/api/song/${songId}`,
+            songData,
+            song => {
+                document.querySelector("#app").innerHTML = Song(song)
+            }
+            );
+        }
+    })
 }
