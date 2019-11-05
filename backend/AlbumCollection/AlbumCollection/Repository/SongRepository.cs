@@ -32,7 +32,7 @@ namespace AlbumCollection.Repository
             db.SaveChanges();
         }
 
-        public void Edit(Songs songs)
+        public void Update(Songs songs)
         {
             db.Songs.Update(songs);
             db.SaveChanges();
