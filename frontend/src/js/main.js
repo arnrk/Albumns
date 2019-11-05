@@ -4,6 +4,9 @@ import Album from "./components/Album";
 import Artist from "./components/Artist";
 import Song from "./components/Song";
 import apiAction from "./api/apiAction";
+import EditAlbum from "./components/EditAlbum";
+import EditArtist from "./components/EditArtist";
+import EditSong from "./components/EditSong";
 
 export default () => {
     pageBuild();
@@ -116,4 +119,39 @@ function navSong(){
         }
     })
 
+    app.addEventListener("click", function(){
+        if(event.target.classList.contains("delete-album__submit")) {
+            const albumId = event.target.parentElement.querySelector(".album__id")
+                .value;
+            console.log("delete " + albumId);
+            apiAction.deleteRequest(`https://localhost:44397/api/album/${albumId}`,
+            albums =>{
+               document.querySelector("#app").innerHTML = Album(albums)
+            })
+        }
+    })
+
+    app.addEventListener("click", function(){
+        if(event.target.classList.contains("delete-artist__submit")) {
+            const artistId = event.target.parentElement.querySelector(".artist__id")
+                .value;
+            console.log("delete " + artistId);
+            apiAction.deleteRequest(`https://localhost:44397/api/artist/${artistId}`,
+            artists =>{
+               document.querySelector("#app").innerHTML = Artist(artists)
+            })
+        }
+    })
+
+    app.addEventListener("click", function(){
+        if(event.target.classList.contains("delete-song__submit")) {
+            const songId = event.target.parentElement.querySelector(".song__id")
+                .value;
+            console.log("delete " + songId);
+            apiAction.deleteRequest(`https://localhost:44397/api/song/${songId}`,
+            songs =>{
+               document.querySelector("#app").innerHTML = Song(songs)
+            })
+        }
+    })
 }

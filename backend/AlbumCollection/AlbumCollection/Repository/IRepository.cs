@@ -11,6 +11,6 @@ namespace AlbumCollection.Repository
         T GetByID(int id);
         void Create(T obj);
         void Delete(T obj);
-        void Edit(T obj);
+        void Update(T obj);
     }
 }

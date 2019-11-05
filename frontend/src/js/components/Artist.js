@@ -6,6 +6,9 @@ export default function Artist(artists) {
         return `
             <li>
                 <h3>${artist.name}</h3>
+                <input class="artist__id" type="hidden" value="${artist.id}">
+                      <button class="edit-artist__submit">Edit</button>
+                      <button class="delete-artist__submit">Delete</button>
             </li>
         `;
       })
