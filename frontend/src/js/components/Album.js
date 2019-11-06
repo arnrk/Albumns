@@ -7,7 +7,7 @@ export default function Album(albums) {
             <li>
                 <h3>${album.name}</h3>
                 <h4>${album.recordlabel}</h4>
-                <h4>${album.image}</h4>
+                <img src=${album.image}></img>
                 <input class="album__id" type="hidden" value="${album.id}">
                     <button class="edit-album__submit">Edit</button>
                     <button class="delete-album__submit">Delete</button>

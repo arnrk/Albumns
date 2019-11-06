@@ -9,7 +9,7 @@ export default function Artist(artists) {
                 <h4>${artist.age}</h4>
                 <h4>${artist.hometown}</h4>
                 <h4>${artist.recordlabel}</h4>
-                <h4>${artist.image}</h4>
+                <img src=${artist.image}></img>
 
                 <input class="artist__id" type="hidden" value="${artist.id}">
                       <button class="edit-artist__submit">Edit</button>

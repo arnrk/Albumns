@@ -4,14 +4,16 @@ using AlbumCollection.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AlbumCollection.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20191106161023_editpath")]
+    partial class editpath
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -42,13 +44,13 @@ namespace AlbumCollection.Migrations
                     b.ToTable("Albums");
 
                     b.HasData(
-                        new { ID = 1, ArtistID = 1, Image = "/images/indicudalbum.jpeg", Name = "Indicud", Recordlabel = "Wicked Awesome" },
-                        new { ID = 2, ArtistID = 2, Image = "/images/Sports-Huey-Lewis.jpg", Name = "Sports", Recordlabel = "Chrysalis Records" },
-                        new { ID = 3, ArtistID = 3, Image = "/images/Jcolealbum.jpeg", Name = "2014 Forest Hills Drive", Recordlabel = "Dreamville" },
-                        new { ID = 4, ArtistID = 4, Image = "/images/wanderedaway.jpg", Name = "Wandered Away", Recordlabel = "Half Awake" },
-                        new { ID = 5, ArtistID = 5, Image = "/images/offspringSmashalbumcover.jpg", Name = "Smash", Recordlabel = "Nitro Records" },
-                        new { ID = 6, ArtistID = 6, Image = "/images/greendayDookiealbumcover.jpg", Name = "Dookie", Recordlabel = "Lookout!" },
-                        new { ID = 7, ArtistID = 7, Image = "/images/U2album.jpg", Name = "Joshua Tree", Recordlabel = "Island Records" }
+                        new { ID = 1, ArtistID = 1, Image = "./docs/images/indicudalbum.jpeg", Name = "Indicud", Recordlabel = "Wicked Awesome" },
+                        new { ID = 2, ArtistID = 2, Image = "./docs/images/Sports-Huey-Lewis.jpg", Name = "Sports", Recordlabel = "Chrysalis Records" },
+                        new { ID = 3, ArtistID = 3, Image = "./docs/images/Jcolealbum.jpeg", Name = "2014 Forest Hills Drive", Recordlabel = "Dreamville" },
+                        new { ID = 4, ArtistID = 4, Image = "./docs/images/wanderedaway.jpg", Name = "Wandered Away", Recordlabel = "Half Awake" },
+                        new { ID = 5, ArtistID = 5, Image = "./docs/images/offspringSmashalbumcover.jpg", Name = "Smash", Recordlabel = "Nitro Records" },
+                        new { ID = 6, ArtistID = 6, Image = "./docs/images/greendayDookiealbumcover.jpg", Name = "Dookie", Recordlabel = "Lookout!" },
+                        new { ID = 7, ArtistID = 7, Image = "./docs/images/U2album.jpg", Name = "Joshua Tree", Recordlabel = "Island Records" }
                     );
                 });
 
@@ -73,13 +75,13 @@ namespace AlbumCollection.Migrations
                     b.ToTable("Artists");
 
                     b.HasData(
-                        new { ID = 1, Age = 35, Hometown = "Cleveland, OH", Image = "/images/kidcudiartistpic.jpg", Name = "Kid Cudi", Recordlabel = "Wicked Awesome" },
-                        new { ID = 2, Age = 40, Hometown = "San Francisco, CA", Image = "/images/Huey-Lewis.jpg", Name = "Heuy Lewis And The News", Recordlabel = "Chrysalis Records" },
-                        new { ID = 3, Age = 34, Hometown = "Fayetteville, NC", Image = "/images/JCole.jpg", Name = "J. Cole", Recordlabel = "Dreamville" },
-                        new { ID = 4, Age = 23, Hometown = "Stockholm, Sweden", Image = "/images/AnnaLeone.jpg", Name = "Anna Leone", Recordlabel = "Half Awake" },
-                        new { ID = 5, Age = 35, Hometown = "Garden Grove, CA", Image = "/images/offspringbandpic.jpg", Name = "The Offspring", Recordlabel = "Nitro Records" },
-                        new { ID = 6, Age = 33, Hometown = "Oakland, CA", Image = "/images/greendaybandpic.jpg", Name = "Green Day", Recordlabel = "Lookout!" },
-                        new { ID = 7, Age = 32, Hometown = "Dublin, Ireland", Image = "/images/U2.jpg", Name = "U2", Recordlabel = "Island Records" }
+                        new { ID = 1, Age = 35, Hometown = "Cleveland, OH", Image = "./docs/images/kidcudiartistpic.jpg", Name = "Kid Cudi", Recordlabel = "Wicked Awesome" },
+                        new { ID = 2, Age = 40, Hometown = "San Francisco, CA", Image = "./docs/images/Huey-Lewis.jpg", Name = "Heuy Lewis And The News", Recordlabel = "Chrysalis Records" },
+                        new { ID = 3, Age = 34, Hometown = "Fayetteville, NC", Image = "./docs/images/JCole.jpg", Name = "J. Cole", Recordlabel = "Dreamville" },
+                        new { ID = 4, Age = 23, Hometown = "Stockholm, Sweden", Image = "./docs/images/AnnaLeone.jpg", Name = "Anna Leone", Recordlabel = "Half Awake" },
+                        new { ID = 5, Age = 35, Hometown = "Garden Grove, CA", Image = "./docs/images/offspringbandpic.jpg", Name = "The Offspring", Recordlabel = "Nitro Records" },
+                        new { ID = 6, Age = 33, Hometown = "Oakland, CA", Image = "./docs/images/greendaybandpic.jpg", Name = "Green Day", Recordlabel = "Lookout!" },
+                        new { ID = 7, Age = 32, Hometown = "Dublin, Ireland", Image = "./docs/images/U2.jpg", Name = "U2", Recordlabel = "Island Records" }
                     );
                 });
 

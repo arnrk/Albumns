@@ -32,7 +32,7 @@ namespace AlbumCollection.Data
                     Age = 35,
                     Recordlabel = "Wicked Awesome",
                     Hometown = "Cleveland, OH",
-                    Image = "./css/images/kidcudiartistpic.jpg"
+                    Image = "/images/kidcudiartistpic.jpg"
                 },
                 new Artists()
                 {
@@ -41,7 +41,7 @@ namespace AlbumCollection.Data
                     Age = 40,
                     Recordlabel = "Chrysalis Records",
                     Hometown = "San Francisco, CA",
-                    Image = "./css/images/Huey-Lewis.jpg"
+                    Image = "/images/Huey-Lewis.jpg"
                 },
                 new Artists()
                 {
@@ -50,7 +50,7 @@ namespace AlbumCollection.Data
                     Age = 34,
                     Recordlabel = "Dreamville",
                     Hometown = "Fayetteville, NC",
-                    Image = "./css/images/JCole.jpg"
+                    Image = "/images/JCole.jpg"
                 },
                 new Artists()
                 {
@@ -59,7 +59,7 @@ namespace AlbumCollection.Data
                     Age = 23,
                     Recordlabel = "Half Awake",
                     Hometown = "Stockholm, Sweden",
-                    Image = "./css/images/AnnaLeone.jpg"
+                    Image = "/images/AnnaLeone.jpg"
                 },
                 new Artists()
                 {
@@ -68,7 +68,7 @@ namespace AlbumCollection.Data
                     Age = 35,
                     Recordlabel = "Nitro Records",
                     Hometown = "Garden Grove, CA",
-                    Image = "./css/images/offspringbandpic.jpg"
+                    Image = "/images/offspringbandpic.jpg"
                 },
                 new Artists()
                 {
@@ -77,7 +77,7 @@ namespace AlbumCollection.Data
                     Age = 33,
                     Recordlabel = "Lookout!",
                     Hometown = "Oakland, CA",
-                    Image = "./css/images/greendaybandpic.jpg"
+                    Image = "/images/greendaybandpic.jpg"
                 },
                 new Artists()
                 {
@@ -86,7 +86,7 @@ namespace AlbumCollection.Data
                     Age = 32,
                     Recordlabel = "Island Records",
                     Hometown = "Dublin, Ireland",
-                    Image = "./css/images/U2.jpg"
+                    Image = "/images/U2.jpg"
                 });
             modelBuilder.Entity<Albums>().HasData(
                 new Albums()
@@ -95,7 +95,7 @@ namespace AlbumCollection.Data
                     Name ="Indicud",
                     Recordlabel = "Wicked Awesome",
                     ArtistID = 1,
-                    Image = "./css/images/indicudalbum.jpeg"
+                    Image = "/images/indicudalbum.jpeg"
                 },
                 new Albums()
                 {
@@ -103,7 +103,7 @@ namespace AlbumCollection.Data
                     Name ="Sports",
                     Recordlabel = "Chrysalis Records",
                     ArtistID = 2,
-                    Image = "./css/images/Sports-Huey-Lewis.jpg"
+                    Image = "/images/Sports-Huey-Lewis.jpg"
 
                 },
                 new Albums()
@@ -112,7 +112,7 @@ namespace AlbumCollection.Data
                     Name ="2014 Forest Hills Drive",
                     Recordlabel = "Dreamville",
                     ArtistID = 3,
-                    Image = "./css/images/Jcolealbum.jpeg"
+                    Image = "/images/Jcolealbum.jpeg"
                 },
                 new Albums()
                 {
@@ -120,7 +120,7 @@ namespace AlbumCollection.Data
                     Name ="Wandered Away",
                     Recordlabel = "Half Awake",
                     ArtistID = 4,
-                    Image = "./css/images/wanderedaway.jpg"
+                    Image = "/images/wanderedaway.jpg"
                 },
                 new Albums()
                 {
@@ -128,7 +128,7 @@ namespace AlbumCollection.Data
                     Name ="Smash",
                     Recordlabel = "Nitro Records",
                     ArtistID = 5,
-                    Image = "./css/images/offspringSmashalbumcover.jpg"
+                    Image = "/images/offspringSmashalbumcover.jpg"
                 },
                 new Albums()
                 {
@@ -136,7 +136,7 @@ namespace AlbumCollection.Data
                     Name ="Dookie",
                     Recordlabel = "Lookout!",
                     ArtistID = 6,
-                    Image = "./css/images/greendayDookiealbumcover.jpg"
+                    Image = "/images/greendayDookiealbumcover.jpg"
                 },
                 new Albums()
                 {
@@ -144,7 +144,7 @@ namespace AlbumCollection.Data
                     Name ="Joshua Tree",
                     Recordlabel = "Island Records",
                     ArtistID = 7,
-                    Image = "./css/images/U2album.jpg"
+                    Image = "/images/U2album.jpg"
                 }
                 );
         
