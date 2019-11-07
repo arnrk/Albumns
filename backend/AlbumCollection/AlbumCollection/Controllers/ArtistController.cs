@@ -42,9 +42,9 @@ namespace AlbumCollection.Controllers
 
 
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public Artists Get(int id)
         {
-            return "artist";
+            return artistRepo.GetByID(id);
         }
 
 
@@ -58,14 +58,19 @@ namespace AlbumCollection.Controllers
 
         // PUT api/artist/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string Artist)
+        public IEnumerable<Artists> Put(int id, [FromBody] Artists artists)
         {
+            artistRepo.Update(artists);
+            return artistRepo.GetAll();
         }
 
         // DELETE api/artist/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IEnumerable<Artists> Delete(int id)
         {
+            var artist = artistRepo.GetByID(id);
+            artistRepo.Delete(artist);
+            return artistRepo.GetAll();
         }
     }
 }
