@@ -46,11 +46,16 @@ function navAlbum(){
             const album = event.target.parentElement.querySelector(
                 ".add-album__albumName"
             ).value;
+            const albumRecordLabel = event.target.parentElement.querySelector(
+                ".add-artist__artistRecordLabel"
+            ).value;
 
             console.log(album);
+            console.log(albumRecordLabel)
             apiAction.postRequest("https://localhost:44397/api/album",
             {
-                name: album
+                name: album,
+                recordlabel: albumRecordLabel
             },
             albums =>{
                 console.log(albums);
@@ -76,11 +81,28 @@ function navArtist(){
             const artist = event.target.parentElement.querySelector(
                 ".add-artist__artistName"
             ).value;
+            const artistAge = event.target.parentElement.querySelector(
+                ".add-artist__artistAge"
+            ).value;
+            const artistHometown = event.target.parentElement.querySelector(
+                ".add-artist__artistHometown"
+            ).value;
+            const artistRecordLabel = event.target.parentElement.querySelector(
+                ".add-artist__artistRecordLabel"
+            ).value;
+            
 
             console.log(artist);
+            console.log(artistAge);
+            console.log(artistHometown);
+            console.log(artistRecordLabel);
             apiAction.postRequest("https://localhost:44397/api/artist",
             {
-                name: artist
+                name: artist,
+                age: artistAge,
+                hometown: artistHometown,
+                recordlabel: artistRecordLabel
+                
             },
             artists =>{
                 console.log(artists);
@@ -104,20 +126,28 @@ function navSong(){
     app.addEventListener("click", function(){
         if(event.target.classList.contains("add-song__submit")) {
             const song = event.target.parentElement.querySelector(
-                ".add-song__songName"
+                ".add-song__songName",
+            ).value;
+            const songDuration = event.target.parentElement.querySelector(
+                ".add-song__songDuration",
             ).value;
 
             console.log(song);
+            console.log(songDuration),
             apiAction.postRequest("https://localhost:44397/api/song",
             {
-                name: song
+                name: song, 
+                duration: songDuration
             },
+            
             songs =>{
                 console.log(songs);
                 document.querySelector("#app").innerHTML = Song(songs)
             })
         }
+       
     })
+    
 
     app.addEventListener("click", function(){
         if(event.target.classList.contains("delete-album__submit")) {

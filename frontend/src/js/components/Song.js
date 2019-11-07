@@ -22,6 +22,7 @@ export default function Song(songs) {
   
   <section class='add-song'>
     <input class='add-song__songName' type='text' placeholder='Add a song!'>
+    <input class='add-song__songDuration' type='text' placeholder='Add song duration'>
     <button class='add-song__submit' id = "button">Submit</button>
   </section>
   `;
