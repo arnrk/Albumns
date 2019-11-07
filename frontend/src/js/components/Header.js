@@ -1,6 +1,6 @@
 export default function Header(){
     return `
-    <nav class='nav__header'>
+    <nav class='sidenav'>
     <ul>
     <li class='nav__home' id="button">Home</li>
     <li class='artists'id="button">Artists</li>
