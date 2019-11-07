@@ -44,19 +44,19 @@ function navAlbum(){
     app.addEventListener("click", function(){
         if(event.target.classList.contains("add-album__submit")) {
             const album = event.target.parentElement.querySelector(
-                ".add-album__albumName"
+                ".add-album__albumName",
             ).value;
             const albumRecordLabel = event.target.parentElement.querySelector(
-                ".add-artist__artistRecordLabel"
+                ".add-album__albumRecordLabel",
             ).value;
-            const addAlbumImage = "./images/alubm.jpg"
+            // const addAlbumImage = "./images/alubm.jpg"
 
             console.log(album);
             apiAction.postRequest("https://localhost:44397/api/album",
             {
                 name: album,
-                recordlabel: albumRecordLabel,
-                albumimage: addAlbumImage
+                recordLabel: albumRecordLabel
+                // albumimage: addAlbumImage
             },
             albums =>{
                 console.log(albums);
@@ -83,15 +83,15 @@ function navArtist(){
                 ".add-artist__artistName"
             ).value;
             const artistAge = event.target.parentElement.querySelector(
-                ".add-artist__artistAge"
+                ".add-artist__artistAge",
             ).value;
             const artistHometown = event.target.parentElement.querySelector(
-                ".add-artist__artistHometown"
+                ".add-artist__artistHometown",
             ).value;
             const artistRecordLabel = event.target.parentElement.querySelector(
-                ".add-artist__artistRecordLabel"
+                ".add-artist__artistRecordLabel",
             ).value;
-            const addArtistImage = "./images/singer.jpg"
+            // const addArtistImage = "./images/singer.jpg"
 
             console.log(artist);
             apiAction.postRequest("https://localhost:44397/api/artist",
@@ -99,8 +99,8 @@ function navArtist(){
                 name: artist,
                 age: artistAge,
                 hometown: artistHometown,
-                recordlabel: artistRecordLabel,
-                image: addArtistImage
+                recordLabel: artistRecordLabel
+                // image: addArtistImage
             },
             artists =>{
                 console.log(artists);

@@ -22,9 +22,9 @@ export default function Artist(artists) {
   
   <section class='add-artist'>
     <input class='add-artist__artistName' type='text' placeholder='Add a artist!'>
-    <input class='add-artist__artistAge type='text' placeholder='Add artist age'>
+    <input class='add-artist__artistAge' type='text' placeholder='Add artist age'>
     <input class='add-artist__artistHometown' type='text' placeholder='Add artist hometown'>
-    <input class='add-artist__artistRecordLable type= placeholder='Add recordlabel>
+    <input class='add-artist__artistRecordLabel' type='text' placeholder='Add recordlabel'>
     <button class='add-artist__submit' id = "button">Submit</button>
   </section>
   `;
