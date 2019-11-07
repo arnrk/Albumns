@@ -49,13 +49,14 @@ function navAlbum(){
             const albumRecordLabel = event.target.parentElement.querySelector(
                 ".add-artist__artistRecordLabel"
             ).value;
+            const addAlbumImage = "./images/alubm.jpg"
 
             console.log(album);
-            console.log(albumRecordLabel)
             apiAction.postRequest("https://localhost:44397/api/album",
             {
                 name: album,
-                recordlabel: albumRecordLabel
+                recordlabel: albumRecordLabel,
+                albumimage: addAlbumImage
             },
             albums =>{
                 console.log(albums);
@@ -90,19 +91,16 @@ function navArtist(){
             const artistRecordLabel = event.target.parentElement.querySelector(
                 ".add-artist__artistRecordLabel"
             ).value;
-            
+            const addArtistImage = "./images/singer.jpg"
 
             console.log(artist);
-            console.log(artistAge);
-            console.log(artistHometown);
-            console.log(artistRecordLabel);
             apiAction.postRequest("https://localhost:44397/api/artist",
             {
                 name: artist,
                 age: artistAge,
                 hometown: artistHometown,
-                recordlabel: artistRecordLabel
-                
+                recordlabel: artistRecordLabel,
+                image: addArtistImage
             },
             artists =>{
                 console.log(artists);
@@ -133,7 +131,6 @@ function navSong(){
             ).value;
 
             console.log(song);
-            console.log(songDuration),
             apiAction.postRequest("https://localhost:44397/api/song",
             {
                 name: song, 
