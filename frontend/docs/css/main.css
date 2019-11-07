@@ -7,6 +7,32 @@ body {
     color: rgb(24, 23, 23);
 }
 
+#menuAnimated {
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Menu Bar */
+#hambuger1, #hambuger2, #hambuger3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+/* Rotate menu first bar */
+.change, #hambuger1{
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+/* Fade out the second menu bar */
+.change, #hambuger2{
+    opacity: 0;
+}
+/* Rotate last menu bar */
+.change, #hambuger3{
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
 #catagories{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -16,7 +42,9 @@ body {
     border: 3em;
 }
 
-
+.sideBar {
+    
+}
 #displayOne{
     display: flex;
     flex-flow: row;
@@ -36,26 +64,39 @@ body {
 
 
 #header{
-    display: flex;
-    flex-flow: row;
     justify-content: center;
-    height: auto;
-    width: 90%;
     background-color:rgb(211, 209, 209);
     padding-left: 5%;
     padding-right: 5%
     
 }
 
-#button {
+.sidebar {
+}
+
+#barButton {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
     background-color: #333;
-    border: none;
     color: white;
     padding: 15px 32px;
-    text-align: center;
     text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto;
+    /* border: none;
     display: block;
-    font-size: 16px;
+    font-size: 16px; */
+  }
+
+  #barButton:hover{
+    background-color: #555;
+    color: white;
   }
 
 #footer{
@@ -93,7 +134,6 @@ h1{
 
 .image{
     object-fit: cover;
-
 }
 
 #artist{

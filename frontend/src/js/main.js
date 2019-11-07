@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Album from "./components/Album";
 import Artist from "./components/Artist";
@@ -14,10 +15,11 @@ export default () => {
 
 function pageBuild(){
     header();
-    footer();
+    navBar();
     navAlbum();
     navArtist();
     navSong();
+    footer();
 }
 
 function header(){
@@ -29,6 +31,20 @@ function header(){
 function footer(){
     const footer = document.getElementById("footer");
     footer.innerHTML = Footer();
+}
+
+function navBar() {
+    const navBar = document.querySelector("#narbar");
+  
+    navBar.innerHTML = NavBar();
+
+    // const menuAnimated = document.querySelector("#menuAnimated")
+    // menuAnimated.addEventListener("click", Function{
+    //     if (event.target)
+    // });
+    // navBar.addEventListener("click", Function {
+    //     event.classList.toggle("change")
+    // });
 }
 
 function navAlbum(){
