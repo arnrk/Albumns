@@ -49,7 +49,7 @@ function navAlbum(){
             const albumRecordLabel = event.target.parentElement.querySelector(
                 ".add-album__albumRecordLabel",
             ).value;
-            const addAlbumImage = "./images/album.jpg"
+            const addAlbumImage = "./images/genericAlbum.svg"
 
             console.log(album);
             apiAction.postRequest("https://localhost:44397/api/album",
@@ -91,7 +91,7 @@ function navArtist(){
             const artistRecordLabel = event.target.parentElement.querySelector(
                 ".add-artist__artistRecordLabel",
             ).value;
-            const addArtistImage = "./images/singer.jpg"
+            const addArtistImage = "./images/genericArtist.svg"
 
             console.log(artist);
             apiAction.postRequest("https://localhost:44397/api/artist",
