@@ -222,12 +222,20 @@ function navSong(){
         if(event.target.classList.contains("update-album__submit")) {
             const albumId = event.target.parentElement.querySelector(".update-album__id")
                 .value;
+            const albumImage = event.target.parentElement.querySelector(".update-album__image")
+                .value;
             const albumName = event.target.parentElement.querySelector(".update-album__name")
                 .value;
+            const albumRecordLabel = event.target.parentElement.querySelector(".update-album__RecordLabel")
+                .value;
+                
             
             const albumData = {
                 id: albumId,
-                name: albumName
+                name: albumName,
+                recordLabel: albumRecordLabel,
+                image: albumImage
+
             }
             apiAction.putRequest(`https://localhost:44397/api/album/${albumId}`,
             albumData,
@@ -242,12 +250,24 @@ function navSong(){
         if(event.target.classList.contains("update-artist__submit")) {
             const artistId = event.target.parentElement.querySelector(".update-artist__id")
                 .value;
+            const artistImage = event.target.parentElement.querySelector(".update-artist__image")
+                .value;
             const artistName = event.target.parentElement.querySelector(".update-artist__name")
+                .value;
+            const artistAge = event.target.parentElement.querySelector(".update-artist__age")
+                .value;
+            const artistHometown = event.target.parentElement.querySelector(".update-artist__hometown")
+                .value;
+            const artistRecordLabel = event.target.parentElement.querySelector(".update-artist__RecordLabel")
                 .value;
             
             const artistData = {
                 id: artistId,
-                name: artistName
+                name: artistName,
+                age: artistAge,
+                hometown: artistHometown,
+                recordLabel: artistRecordLabel,
+                image: artistImage
             }
             apiAction.putRequest(`https://localhost:44397/api/artist/${artistId}`,
             artistData,
@@ -264,10 +284,13 @@ function navSong(){
                 .value;
             const songName = event.target.parentElement.querySelector(".update-song__name")
                 .value;
-            
+            const songDuration = event.target.parentElement.querySelector(".update-song__duration")
+                .value;
+
             const songData = {
                 id: songId,
-                name: songName
+                name: songName,
+                duration: songDuration
             }
             apiAction.putRequest(`https://localhost:44397/api/song/${songId}`,
             songData,
