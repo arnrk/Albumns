@@ -10,6 +10,7 @@ namespace AlbumCollection.Models
         public int ID { get; set; }
         public string Name { get; set; }
         public string Recordlabel { get; set; }
+        public string Image { get; set; }
 
         public virtual ICollection<Songs> Songs { get; set; }
 
@@ -20,12 +21,13 @@ namespace AlbumCollection.Models
         {
         }
 
-        public Albums(int id, string name, string recordLabel, int artistID)
+        public Albums(int id, string name, string recordLabel, int artistID, string image)
         {
             ID = id;
             Name = name;
             Recordlabel = recordLabel;
             ArtistID = artistID;
+            Image = image;
         }
 
     }
