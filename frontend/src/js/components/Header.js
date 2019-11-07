@@ -6,7 +6,7 @@ export default function Header(){
     <li class='artists'id="button">Artists</li>
     <li class='songs' id="button">Songs</li>
     <li class='albums' id="button">Albums</li>
-    <h1>Welcome To Victor Coffee</h1>
+    
     
     </ul>
 

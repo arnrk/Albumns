@@ -6,7 +6,7 @@ export default function Artist(artist){
 
         <section class='update-artist'>
             <input class="update-artist__name" value="${artist.name}">
-            <button class="update-artist__submit">Save Changes</button>
+            <button class="update-artist__submit" id="buttonCrud">Save Changes</button>
             <input class="update-artist__id" type='hidden' value="${artist.id}">
         </section>
     `;
