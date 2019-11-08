@@ -6,7 +6,7 @@ export default function Artist(artists) {
       return `
       <div id="detail">
         <article>
-          <img src=${artist.image}></img>
+          <img src=${artist.image} class='artistAlbums'></img>
         </article>
         <article>
           <li>

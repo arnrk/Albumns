@@ -112,7 +112,7 @@ namespace AlbumCollection.Data
                     Name ="2014 Forest Hills Drive",
                     Recordlabel = "Dreamville",
                     ArtistID = 3,
-                    Image = "/images/Jcolealbum.jpeg"
+                    Image = "/images/Jcolealbum.jpg"
                 },
                 new Albums()
                 {

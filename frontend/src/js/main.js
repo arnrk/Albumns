@@ -18,6 +18,7 @@ function pageBuild(){
     navAlbum();
     navArtist();
     navSong();
+    artistAlbum();
 }
 
 function header(){
@@ -301,3 +302,4 @@ function navSong(){
         }
     })
 }
+
