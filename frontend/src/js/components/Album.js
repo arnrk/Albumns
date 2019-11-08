@@ -4,7 +4,7 @@ export default function Album(albums) {
     ${albums
       .map(album => {
         return `
-        <div class= "albumDetails" id="detail"><li>
+        <div class="albumDetails" id="albumDetail"><li>
         <article>
                 <h3>${album.name}</h3>
         </article>
