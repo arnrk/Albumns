@@ -301,5 +301,15 @@ function navSong(){
             );
         }
     })
+
+    const artistId = document.querySelector(".artist__id").value;
+    const artistToAlbum = document.querySelector(".artistAlbums");
+
+    artistToAlbum.addEventListener("click", function(){
+        apiAction.getRequest(`https://localhost:44397/api/artist/${artistId}`, 
+        artist => {
+            document.querySelector("#app").innerHTML = Artist(artist);
+        });
+    });
 }
 
