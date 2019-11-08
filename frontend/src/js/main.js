@@ -7,6 +7,7 @@ import apiAction from "./api/apiAction";
 import EditAlbum from "./components/EditAlbum";
 import EditArtist from "./components/EditArtist";
 import EditSong from "./components/EditSong";
+import SingleArtistPage from "./components/SingleArtistPage";
 
 export default () => {
     pageBuild();
@@ -18,7 +19,6 @@ function pageBuild(){
     navAlbum();
     navArtist();
     navSong();
-    artistAlbum();
 }
 
 function header(){
@@ -302,14 +302,15 @@ function navSong(){
         }
     })
 
-    const artistId = document.querySelector(".artist__id").value;
-    const artistToAlbum = document.querySelector(".artistAlbums");
-
-    artistToAlbum.addEventListener("click", function(){
-        apiAction.getRequest(`https://localhost:44397/api/artist/${artistId}`, 
-        artist => {
-            document.querySelector("#app").innerHTML = Artist(artist);
-        });
-    });
+    app.addEventListener("click", function(){
+        if(event.target.classList.contains("artistImage")) {
+            const artistId = event.target.parentElement.querySelector(".artist__id")
+                .value;
+                apiAction.getRequest(`https://localhost:44397/api/artist/${artistId}`, 
+                artist => {
+                    console.log("Displaying Artist: " + artist.name);
+            document.querySelector("#app").innerHTML = SingleArtistPage(artist);
+            })
+        }
+    })
 }
-
