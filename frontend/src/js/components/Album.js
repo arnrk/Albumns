@@ -4,18 +4,21 @@ export default function Album(albums) {
     ${albums
       .map(album => {
         return `
-        <div class="albumDetails" id="albumDetail"><li>
-        <article>
-                <h3>${album.name}</h3>
-        </article>
-        <article>
-                <h4>${album.recordlabel}</h4>
-                <img class ="image" id="detail article img" src=${album.image}></img>
+        <div class="albumDetails" id="albumDetail">
+            <article>
+              <img class ="albumImage" src=${album.image}>
                 <input class="album__id" type="hidden" value="${album.id}">
-                    <button class="edit-album__submit" id="buttonCrud">Edit</button>
-                    <button class="delete-album__submit"id="buttonCrud">Delete</button>
-            </li>
-        </article>
+              </img>
+            </article>
+            <article>
+              <li>
+                  <h3>${album.name}</h3>
+                  <h4>${album.recordlabel}</h4>
+              </li>
+                <input class="album__id" type="hidden" value="${album.id}">
+                <button class="edit-album__submit" id="buttonCrud">Edit</button>
+                <button class="delete-album__submit"id="buttonCrud">Delete</button>
+            </article>
         </div>    
         `;
       })
@@ -23,12 +26,9 @@ export default function Album(albums) {
   </ul>
   
   <section class='add-album'>
-    <input class='add-album__albumName' type='text' placeholder='Add a album!'>
-
-    <input class='add-album__albumRecordLabel' type='text' placeholder='Add recordlabel'>
-
-    <button class='add-album__submit'id = "buttonCrud">Submit</button>
-
+    <input class='add-album__albumName' type='text' placeholder='Album Name'>
+    <input class='add-album__albumRecordLabel' type='text' placeholder='Recordlabel Name'>
+    <button class='add-album__submit'id ="buttonCrud">Submit</button>
   </section>
   `;
 }

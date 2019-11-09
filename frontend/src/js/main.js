@@ -8,6 +8,7 @@ import EditAlbum from "./components/EditAlbum";
 import EditArtist from "./components/EditArtist";
 import EditSong from "./components/EditSong";
 import SingleArtistPage from "./components/SingleArtistPage";
+import SingleAlbumPage from "./components/SingleAlbumPage";
 
 export default () => {
     pageBuild();
@@ -310,6 +311,18 @@ function navSong(){
                 artist => {
                     console.log("Displaying Artist: " + artist.name);
             document.querySelector("#app").innerHTML = SingleArtistPage(artist);
+            })
+        }
+    })
+
+    app.addEventListener("click", function(){
+        if(event.target.classList.contains("albumImage")) {
+            const albumId = event.target.parentElement.querySelector(".album__id")
+                .value;
+                apiAction.getRequest(`https://localhost:44397/api/album/${albumId}`, 
+                album => {
+                    console.log("Displaying Album: " + album.name);
+            document.querySelector("#app").innerHTML = SingleAlbumPage(album);
             })
         }
     })

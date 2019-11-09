@@ -12,9 +12,9 @@ export default function SingleArtistPage(artist){
           <h4>${artist.hometown}</h4>
           <h4>${artist.recordlabel}</h4>
         
-        <input id="artistIm" class="artist__id" type="hidden" value="${artist.id}">
-            <button class="edit-artist__submit" id = "buttonCrud">Edit</button>
-            <button class="delete-artist__submit" id = "buttonCrud">Delete</button>
+          <input id="artistIm" class="artist__id" type="hidden" value="${artist.id}">
+          <button class="edit-artist__submit" id = "buttonCrud">Edit</button>
+          <button class="delete-artist__submit" id = "buttonCrud">Delete</button>
         </li>
       </article>
     </div>
