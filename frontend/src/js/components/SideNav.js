@@ -1,4 +1,4 @@
-export default function Header(){
+export default function SideNav(){
     return `
     <nav class='sidenav'>
         <ul>
@@ -7,6 +7,6 @@ export default function Header(){
             <li class='albums' id="button">Albums</li>
             <li class='songs' id="button">Songs</li>
         </ul>
-</nav>
+    </nav>
     `;
 }

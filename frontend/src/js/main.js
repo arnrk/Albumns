@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import SideNav from "./components/SideNav";
 import Footer from "./components/Footer";
 import Album from "./components/Album";
 import Artist from "./components/Artist";
@@ -15,17 +15,16 @@ export default () => {
 };
 
 function pageBuild(){
-    header();
+    sideNav();
     footer();
     navAlbum();
     navArtist();
     navSong();
 }
 
-function header(){
-    const header = document.getElementById("header");
-    header.innerHTML = Header();
-    
+function sideNav(){
+    const sideNav = document.getElementById("sideNav");
+    sideNav.innerHTML = SideNav();
 }
 
 function footer(){
