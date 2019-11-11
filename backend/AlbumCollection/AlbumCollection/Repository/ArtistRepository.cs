@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AlbumCollection.Data;
 using AlbumCollection.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace AlbumCollection.Repository
 {
@@ -45,7 +46,7 @@ namespace AlbumCollection.Repository
 
         public Artists GetByID(int id)
         {
-            return db.Artists.Single(p => p.ID == id);
+            return db.Artists.Where(i => i.ID == id).Include("Albums").FirstOrDefault();
         }
 
         public void Save()

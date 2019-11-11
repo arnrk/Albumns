@@ -16,9 +16,8 @@ namespace AlbumCollection.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var connectionString = "Server=(localdb)\\mssqllocaldb;Database=AlbumCollection;Trusted_Connection=True;";
-            =>optionsBuilder
-                .UseSqlServer(connectionString)
-                .UseLazyLoadingProxies();
+            optionsBuilder.UseSqlServer(connectionString);
+                //.UseLazyLoadingProxies();
             base.OnConfiguring(optionsBuilder);
         }
 
