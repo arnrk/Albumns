@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import SideNav from "./components/SideNav";
 import Footer from "./components/Footer";
 import Album from "./components/Album";
 import Artist from "./components/Artist";
@@ -7,23 +7,24 @@ import apiAction from "./api/apiAction";
 import EditAlbum from "./components/EditAlbum";
 import EditArtist from "./components/EditArtist";
 import EditSong from "./components/EditSong";
+import SingleArtistPage from "./components/SingleArtistPage";
+import SingleAlbumPage from "./components/SingleAlbumPage";
 
 export default () => {
     pageBuild();
 };
 
 function pageBuild(){
-    header();
+    sideNav();
     footer();
     navAlbum();
     navArtist();
     navSong();
 }
 
-function header(){
-    const header = document.getElementById("header");
-    header.innerHTML = Header();
-    
+function sideNav(){
+    const sideNav = document.getElementById("sideNav");
+    sideNav.innerHTML = SideNav();
 }
 
 function footer(){
@@ -298,6 +299,30 @@ function navSong(){
                 document.querySelector("#app").innerHTML = Song(song)
             }
             );
+        }
+    })
+
+    app.addEventListener("click", function(){
+        if(event.target.classList.contains("artistImage")) {
+            const artistId = event.target.parentElement.querySelector(".artist__id")
+                .value;
+                apiAction.getRequest(`https://localhost:44397/api/artist/${artistId}`, 
+                artist => {
+                    console.log("Displaying Artist: " + artist.name);
+            document.querySelector("#app").innerHTML = SingleArtistPage(artist);
+            })
+        }
+    })
+
+    app.addEventListener("click", function(){
+        if(event.target.classList.contains("albumImage")) {
+            const albumId = event.target.parentElement.querySelector(".album__id")
+                .value;
+                apiAction.getRequest(`https://localhost:44397/api/album/${albumId}`, 
+                album => {
+                    console.log("Displaying Album: " + album.name);
+            document.querySelector("#app").innerHTML = SingleAlbumPage(album);
+            })
         }
     })
 }

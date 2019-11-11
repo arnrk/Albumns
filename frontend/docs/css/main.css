@@ -5,19 +5,19 @@ body {
     background-size: 100%;
     background-position: center;
     color: rgb(24, 23, 23);
-}
-
-#catagories{
+  }
+  
+  #catagories{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
     border: 3em;
-}
-
-
-#displayOne{
+  }
+  
+  
+  #displayOne{
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -29,24 +29,24 @@ body {
     padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%
-}
-
-#app{
-  display: block;
-  flex-flow: row;
-  justify-content: center;
-  min-height: 250px;
-  width: 90%;
-  background-color: rgba(245, 245, 245, .7);
-  margin-bottom: 5%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  padding-left: 5%;
-  padding-right: 5%
-}
-
-
-#header{
+  }
+  
+  #app{
+    display: block;
+    flex-flow: row;
+    justify-content: center;
+    min-height: 250px;
+    width: 90%;
+    background-color: rgba(245, 245, 245, .7);
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%
+  }
+  
+  
+  #sideNav{
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -55,11 +55,9 @@ body {
     background-color:rgb(211, 209, 209);
     padding-left: 5%;
     padding-right: 5%
-    
-    
-}
-
-#button {
+  }
+  
+  #button {
     background-color: #333;
     border: none;
     color: white;
@@ -68,9 +66,9 @@ body {
     text-decoration: none;
     display: block;
     font-size: 16px;
-  }
-
-  #buttonCrud {
+    }
+  
+    #buttonCrud {
     background-color: #333;
     border: none;
     color: white;
@@ -79,9 +77,9 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-  }
-
-#footer{
+    }
+  
+  #footer{
     position: fixed;
     bottom: 0;
     left: 0;
@@ -92,34 +90,34 @@ body {
     background-color:rgb(202, 202, 202);
     opacity: 1;
     margin-top: 2rem;
-}
-
-input{
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}
-
-h1{
+  }
+  
+  input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  h1{
     text-align: center;
-}
-
-.albumDetails{
+  }
+  
+  .albumDetails{
+    list-style-type: none;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
     border: 3em;
-}
-
-.image{
+  }
+  
+  .image{
     object-fit: cover;
-
-}
-
-.sidenav {
+  }
+  
+  .sidenav {
     height: 100%;
     width: 160px;
     position: fixed;
@@ -130,59 +128,83 @@ h1{
     overflow-x: hidden;
     padding-top: 20px;
     padding-right: 20px;
-  }
-  
-  .sidenav a {
+    }
+    
+    .sidenav li {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
-  }
-  
-  .sidenav a:hover {
+    }
+    
+    .sidenav li:hover {
+    cursor: pointer;
     color: #f1f1f1;
-  }
-  
-  .main {
+    }
+    
+    .main {
     margin-left: 160px; /* Same as the width of the sidenav */
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
-  }
-  
-  @media screen and (max-height: 450px) {
+    }
+    
+    @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-  }
-
-  #detail {
+    }
+  
+    #detail {
+    list-style-type: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1em;
     border: 3em;
-}
-
-    #detail article {
-        background: #ad6a2b;
-        padding: 1em;
-        color: white;
-    }
-
-        #detail article img {
-            width: 100%;
-            border: 1px solid #333;
-            height: auto;
-        }
-
-
-#artist{
-
-}
-
-#album{
-
-}
-
-#song{
-
-}
+  }
+  
+  #detail article {
+    background: #ad6a2b;
+    padding: 1em;
+    color: white;
+      }
+  
+  #detail article img {
+    width: 100%;
+    border: 1px solid #333;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  #albumDetail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1em;
+    border: 3em;
+  }
+        
+  #albumDetail article {
+    background: #ad6a2b;
+    padding: 1em;
+    color: white;
+  }
+        
+   #albumDetail article img {
+    width: 100%;
+    border: 1px solid #333;
+    height: auto;
+    cursor: pointer;
+  }
+        
+  
+  
+  #artist{
+  
+  }
+  
+  #album{
+  
+  }
+  
+  #song{
+  
+  }

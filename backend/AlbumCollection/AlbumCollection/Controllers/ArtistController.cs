@@ -33,14 +33,6 @@ namespace AlbumCollection.Controllers
             return artistRepo.GetAll();
         }
 
-
-
-
-
-
-
-
-
         [HttpGet("{id}")]
         public Artists Get(int id)
         {

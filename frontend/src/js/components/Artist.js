@@ -6,7 +6,9 @@ export default function Artist(artists) {
       return `
       <div id="detail">
         <article>
-          <img src=${artist.image}></img>
+          <img class='artistImage' src=${artist.image}>
+            <input class="artist__id" type="hidden" value="${artist.id}">
+          </img>
         </article>
         <article>
           <li>
@@ -14,12 +16,10 @@ export default function Artist(artists) {
               <h4>${artist.age}</h4>
               <h4>${artist.hometown}</h4>
               <h4>${artist.recordlabel}</h4>
-
-
-              <input class="artist__id" type="hidden" value="${artist.id}">
-                    <button class="edit-artist__submit" id = "buttonCrud">Edit</button>
-                    <button class="delete-artist__submit" id = "buttonCrud">Delete</button>
           </li>
+            <input class="artist__id" type="hidden" value="${artist.id}">
+            <button class="edit-artist__submit" id ="buttonCrud">Edit</button>
+            <button class="delete-artist__submit" id ="buttonCrud">Delete</button>
           </article>
         </div>
       `;
@@ -28,11 +28,12 @@ export default function Artist(artists) {
 </ul>
 
 <section class='add-artist'>
-  <input class='add-artist__artistName' type='text' placeholder='Add a artist!'>
-  <input class='add-artist__artistAge' type='text' placeholder='Add artist age'>
-  <input class='add-artist__artistHometown' type='text' placeholder='Add artist hometown'>
-  <input class='add-artist__artistRecordLabel' type='text' placeholder='Add recordlabel'>
-  <button class='add-artist__submit' id = "buttonCrud">Submit</button>
+  <h1>Add An Artist!</h1>
+    <input class='add-artist__artistName' type='text' placeholder='Artist Name'>
+    <input class='add-artist__artistAge' type='text' placeholder='Age'>
+    <input class='add-artist__artistHometown' type='text' placeholder='Hometown'>
+    <input class='add-artist__artistRecordLabel' type='text' placeholder='Recordlabel'>
+    <button class='add-artist__submit' id ="buttonCrud">Submit</button>
 </section>
 `;
 }
