@@ -41,6 +41,15 @@ export default function SingleArtistPage(artist){
         })
         .join("")}
     </ul>
+    </ul>
+  
+    <section class='add-album'>
+      <input class="artist__id" type="hidden" value="${artist.id}">
+      <input class='add-album__albumName' type='text' placeholder='Album Name'>
+      <input class='add-album__albumRecordLabel' type='text' placeholder='Recordlabel Name'>
+      <button class='add-album__submit'id ="buttonCrud">Submit</button>
+    </section>
+  
       </div>
     `;
 }
