@@ -50,7 +50,7 @@ namespace AlbumCollection.Controllers
 
         // PUT api/artist/5
         [HttpPut("{id}")]
-        public IEnumerable<Artists> Put(int id, [FromBody] Artists artists)
+        public IEnumerable<Artists> Put(/*int id,*/ [FromBody] Artists artists)
         {
             artistRepo.Update(artists);
             return artistRepo.GetAll();
