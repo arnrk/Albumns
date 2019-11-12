@@ -34,7 +34,9 @@ namespace AlbumCollection
                        .AllowAnyMethod()
                        .AllowAnyHeader();
             }));
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
+                .AddJsonOptions(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+           
             services.AddDbContext<Context>();
             services.AddScoped<IRepository<Songs>, SongRepository>();
             services.AddScoped<IRepository<Albums>, AlbumRepository>();

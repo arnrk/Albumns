@@ -4,53 +4,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using AlbumCollection.Data;
 using AlbumCollection.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace AlbumCollection.Repository
 {
-    public class AlbumRepository : IRepository<Albums>
+    public class AlbumRepository : Repository<Albums>, IRepository<Albums>
     {
-        private Context db;
-        public AlbumRepository(Context db)
+        private DbContext db;
+
+        public AlbumRepository(Context context) : base(context)
         {
-            this.db = db;
+            this.db = context;
         }
 
-        public int Count()
+        public override Albums GetByID(int id)
         {
-            return db.Albums.Count();
-        }
-
-        public void Create(Albums albums)
-        {
-            db.Albums.Add(albums);
-            db.SaveChanges();
-        }
-
-        public void Delete(Albums albums)
-        {
-            db.Albums.Remove(albums);
-            db.SaveChanges();
-        }
-
-        public void Update(Albums albums)
-        {
-            db.Albums.Update(albums);
-            db.SaveChanges();
-        }
-
-        public IEnumerable<Albums> GetAll()
-        {
-            return db.Albums.ToList();
-        }
-
-        public Albums GetByID(int id)
-        {
-            return db.Albums.Single(p => p.ID == id);
-        }
-
-        public void Save()
-        {
-            db.SaveChanges();
+            return db.Set<Albums>().Where(i => i.ID == id).Include("Songs").FirstOrDefault();
         }
     }
 }
