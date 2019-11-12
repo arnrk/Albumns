@@ -17,13 +17,15 @@ body {
   border: 3em;
 }
 
-
 #displayArea {
+
   display: flex;
   flex-flow: row;
   justify-content: center;
   min-height: 250px;
+
   width: 50%;
+
   background-color:rgba(245, 245, 245, 0);
   margin-bottom: 5%;
   padding-top: 5%;
@@ -37,10 +39,12 @@ body {
   /* flex-flow: row; */
   justify-content: center;
   min-height: 250px;
+
   width: 50%;
   background-color: rgba(245, 245, 245, .5);
   margin-bottom: 5%;
   margin-top: 5%;
+
   padding-top: 10%;
   padding-bottom: 5%;
   padding-left: 5%;
@@ -62,6 +66,7 @@ body {
 }
 
 #button {
+
   /* background-color: rgba(7, 7, 7, 0.986); */
   /* border: none;
   color: white; */
@@ -123,6 +128,7 @@ body {
   #headerpicture {
     width: 1400px;
     margin: auto;
+
   }
 
   #buttonCrud {
@@ -188,7 +194,9 @@ h1{
 
   ul {
     padding-inline-start: 40px;
+
     margin-block-start: 12em;
+
   }
   
   .sidenav li {
