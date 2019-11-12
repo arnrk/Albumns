@@ -50,6 +50,8 @@ function navAlbum(){
             const albumRecordLabel = event.target.parentElement.querySelector(
                 ".add-album__albumRecordLabel",
             ).value;
+            const artistId = event.target.parentElement.querySelector(".artist__id")
+            .value;
             const addAlbumImage = "./images/genericAlbum.svg"
 
             console.log(album);
@@ -57,7 +59,8 @@ function navAlbum(){
             {
                 name: album,
                 recordLabel: albumRecordLabel,
-                image: addAlbumImage
+                image: addAlbumImage,
+                artistsID: artistId
             },
             albums =>{
                 console.log(albums);
@@ -262,12 +265,15 @@ function navSong(){
             const songDuration = event.target.parentElement.querySelector(
                 ".add-song__songDuration",
             ).value;
+            const albumId = event.target.parentElement.querySelector(".album__id")
+            .value;
 
             console.log(song);
             apiAction.postRequest("https://localhost:44397/api/song",
             {
                 name: song, 
-                duration: songDuration
+                duration: songDuration,
+                albumsID: albumId
             },
             
             songs =>{

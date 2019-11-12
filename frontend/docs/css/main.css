@@ -17,15 +17,13 @@ body {
   border: 3em;
 }
 
-#displayArea {
 
+#displayArea {
   display: flex;
   flex-flow: row;
   justify-content: center;
   min-height: 250px;
-
   width: 50%;
-
   background-color:rgba(245, 245, 245, 0);
   margin-bottom: 5%;
   padding-top: 5%;
@@ -39,7 +37,6 @@ body {
   /* flex-flow: row; */
   justify-content: center;
   min-height: 250px;
-
   width: 50%;
   background-color: rgba(245, 245, 245, .5);
   margin-bottom: 5%;

@@ -25,10 +25,6 @@ export default function Album(albums) {
       .join("")}
   </ul>
   
-  <section class='add-album'>
-    <input class='add-album__albumName' type='text' placeholder='Album Name'>
-    <input class='add-album__albumRecordLabel' type='text' placeholder='Recordlabel Name'>
-    <button class='add-album__submit'id ="buttonCrud">Submit</button>
-  </section>
+
   `;
 }
