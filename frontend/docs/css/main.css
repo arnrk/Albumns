@@ -36,16 +36,23 @@ body {
   display: block;
   /* flex-flow: row; */
   justify-content: center;
-  min-height: 250px;
-  width: 50%;
-  background-color: rgba(245, 245, 245, .5);
-  margin-bottom: 5%;
-  margin-top: 5%;
+  /* min-height: 250px;
+  width: 50%; */
+  /* background-color: rgba(245, 245, 245, .5); */
+  /* margin-bottom: 5%;
+  margin-top: 5%; */
 
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 5%;
-  padding-right: 5%
+  padding-right: 5%;
+  position: absolute;
+  /* top: 25%;
+  left: 35%; */
+  margin-top: -50px;
+  margin-left: -50px;
+  /* width: 500px;
+  height: 500px; */
 }
 
 
