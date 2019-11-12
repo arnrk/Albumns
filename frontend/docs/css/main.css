@@ -6,19 +6,20 @@ body {
     background-position: center;
     color: rgb(24, 23, 23);
   }
-  
-  #catagories{
+
+  /* #catagories{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
     border: 3em;
-  }
+  } */
   
   
   #displayOne{
     display: flex;
+    float: left;
     flex-flow: row;
     justify-content: center;
     min-height: 250px;
@@ -48,6 +49,7 @@ body {
   
   #sideNav{
     display: flex;
+    float: left;
     flex-flow: row;
     justify-content: center;
     height: auto;
@@ -143,11 +145,11 @@ body {
     color: #f1f1f1;
     }
     
-    .main {
-    margin-left: 160px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
+    /* .main {
+    margin-left: 160px; 
+    font-size: 28px;
     padding: 0px 10px;
-    }
+    } */
     
     @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
@@ -193,18 +195,4 @@ body {
     border: 1px solid #333;
     height: auto;
     cursor: pointer;
-  }
-        
-  
-  
-  #artist{
-  
-  }
-  
-  #album{
-  
-  }
-  
-  #song{
-  
   }
