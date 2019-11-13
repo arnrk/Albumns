@@ -24,7 +24,13 @@ export default function Album(albums) {
       })
       .join("")}
   </ul>
-  
-
+  <div class="fourm">
+    <section class='add-album'>
+      <h1>Add Album!</h1>
+      <input class='add-album__albumName' type='text' placeholder='Add a album!'>
+      <input class='add-album__albumRecordLabel' type='text' placeholder='Add recordlabel'>
+      <button class='add-album__submit'id = "buttonCrud">Submit</button>
+    </section>
+  </div>
   `;
 }

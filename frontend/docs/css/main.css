@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  color: rgb(24, 23, 23);
+  background-color: rgb(24, 23, 23);
   padding-left: 15rem;
 }
 
@@ -20,6 +20,7 @@ body {
   transition: all 0.5s;
   margin-right: 160px;
   padding: 5em;
+  position: absolute;
 }
 
 #catagories{
@@ -47,15 +48,13 @@ body {
 }
 
 #app {
-  display: block;
+  /* display: block; */
   justify-content: center;
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 5%;
   padding-right: 5%;
-  position: absolute;
-  margin-top: -50px;
-  margin-left: -50px;
+  /* position: absolute; */
 }
 
 #sideNav{
@@ -72,27 +71,6 @@ body {
 }
 
 #button {
-
-  /* background-color: rgba(7, 7, 7, 0.986); */
-  /* border: none;
-  color: white; */
-  /* padding: 22px 32px; */
-  /* text-align: center;
-  text-decoration: none;
-  display: block;
-  font-size: 16px; */
-  /* margin-top: 20px; */
-  /* border-radius: 40%; */
-  /* background-color: rgba(7, 7, 7, 0.986); */
-    /* border: none;
-    color: white; */
-    /* padding: 22px 32px; */
-    /* text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 20px; */
-    /* margin-top: 20px; */
-    /* border-radius: 40%;  */
   box-shadow: 0px 1px 0px 0px #fff6af;
 	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
 	background-color:#ffec64;
@@ -109,7 +87,7 @@ body {
   text-shadow:0px 1px 0px #ffee66;
   margin-top: 20px;
   transition: all 0.5s;
-  }
+}
 
 .headerblock {
   box-shadow: 0px 1px 0px 0px #fff6af;
@@ -125,12 +103,12 @@ body {
   margin-top: 20px;
   transition: all 0.5s;
   margin-right: 160px;
-  }
+}
 
 #headerpicture {
     max-width: 100%;
     height: auto;
-  }
+}
 
 #buttonCrud {
   background-color: #333;
@@ -142,7 +120,7 @@ body {
   display: inline-block;
   font-size: 16px;
   border-radius:20px;
-  }
+}
 
 #footer{
   position: fixed;
@@ -164,9 +142,6 @@ input{
   box-sizing: border-box;
 }
 
-h1{
-  text-align: center;
-}
 
 .albumDetails{
   list-style-type: none;
@@ -192,13 +167,13 @@ h1{
   overflow-x: hidden;
   padding-top: 20px;
   padding-right: 20px;
+  margin-block-start: 12em;
+
 }
 
 ul {
     padding-inline-start: 40px;
-
-    margin-block-start: 12em;
-
+    list-style-type: none;
 }
   
 .sidenav li {
@@ -215,8 +190,8 @@ ul {
 }
   
 .main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
+  margin-left: 160px;
+  font-size: 28px;
   padding: 0px 10px;
 }
   
@@ -237,18 +212,21 @@ ul {
   background: #ad6a2b;
   padding: 1em;
   color: white;
-    }
+  border-radius: 1em;
+}
 
 #detail article img {
   width: 100%;
   border: 1px solid #333;
   height: auto;
   cursor: pointer;
+  border-radius: 3em;
+
 }
 
 #albumDetail {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 1em;
   border: 3em;
 }
@@ -257,6 +235,7 @@ ul {
   background: #ad6a2b;
   padding: 1em;
   color: white;
+  border-radius: 3em;
 }
       
 #albumDetail article img {
@@ -264,4 +243,19 @@ ul {
   border: 1px solid #333;
   height: auto;
   cursor: pointer;
+  border-radius: 3em;
+}
+
+.songDetail{
+  background: #ad6a2b;
+  /* padding: 1em; */
+  color: white;
+  padding: 1em;
+}
+
+.fourm{
+  background: #ad6a2b;
+  color: white;
+  padding: 1em;
+  text-align: center;
 }

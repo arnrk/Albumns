@@ -43,7 +43,7 @@ function sideNav(){
     sideNav.addEventListener("click", function(){
         if(event.target.classList.contains("nav__home")){
             const display = document.querySelector("#app");
-            display.innerHTML = "";
+            display.innerHTML = Logo();
         }
     })
 }
@@ -153,7 +153,6 @@ function navAlbum(){
             })
         }
     })
-
 }
 
 function navArtist(){
@@ -317,10 +316,6 @@ function navSong(){
         }
     })
 
-   
-
-    
-
     app.addEventListener("click", function(){
         if(event.target.classList.contains("edit-song__submit")) {
             const songId = event.target.parentElement.querySelector(".song__id")
@@ -332,10 +327,6 @@ function navSong(){
             })
         }
     })
-
-    
-
-   
 
     app.addEventListener("click", function(){
         if(event.target.classList.contains("update-song__submit")) {
@@ -358,9 +349,5 @@ function navSong(){
             }
             );
         }
-    })
-
-    
-
-    
+    }) 
 }
