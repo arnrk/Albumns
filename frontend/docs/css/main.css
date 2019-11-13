@@ -267,3 +267,10 @@ h1{
   height: auto;
   cursor: pointer;
 }
+
+#songbox{
+  display: grid;
+  background: #ad6a2b;
+  padding: 1em;
+  color: white;
+}
