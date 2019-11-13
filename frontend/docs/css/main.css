@@ -8,6 +8,20 @@ body {
   padding-left: 15rem;
 }
 
+.logo{
+  box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+  border-radius:18em;
+	border:10px solid #ffaa22;
+	padding:16px 32px;
+	text-decoration:none;
+  margin-top: 20px;
+  transition: all 0.5s;
+  margin-right: 160px;
+  padding: 5em;
+}
+
 #catagories{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -34,27 +48,15 @@ body {
 
 #app {
   display: block;
-  /* flex-flow: row; */
   justify-content: center;
-  /* min-height: 250px;
-  width: 50%; */
-  /* background-color: rgba(245, 245, 245, .5); */
-  /* margin-bottom: 5%;
-  margin-top: 5%; */
-
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 5%;
   padding-right: 5%;
   position: absolute;
-  /* top: 25%;
-  left: 35%; */
   margin-top: -50px;
   margin-left: -50px;
-  /* width: 500px;
-  height: 500px; */
 }
-
 
 #sideNav{
   display: flex;
@@ -109,18 +111,14 @@ body {
   transition: all 0.5s;
   }
 
-  .headerblock {
-    box-shadow: 0px 1px 0px 0px #fff6af;
+.headerblock {
+  box-shadow: 0px 1px 0px 0px #fff6af;
 	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
 	background-color:#ffec64;
   border-radius:10px;
 	border:4px solid #ffaa22;
 	display:block;
-	cursor:pointer;
 	color:#333333;
-	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	font-size:17px;
-	font-weight:bold;
 	padding:16px 32px;
 	text-decoration:none;
   text-shadow:0px 1px 0px #ffee66;
@@ -129,13 +127,12 @@ body {
   margin-right: 160px;
   }
 
-  #headerpicture {
-    width: 1400px;
-    margin: auto;
-
+#headerpicture {
+    max-width: 100%;
+    height: auto;
   }
 
-  #buttonCrud {
+#buttonCrud {
   background-color: #333;
   border: none;
   color: white;
@@ -144,6 +141,7 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius:20px;
   }
 
 #footer{
@@ -194,40 +192,40 @@ h1{
   overflow-x: hidden;
   padding-top: 20px;
   padding-right: 20px;
-  }
+}
 
-  ul {
+ul {
     padding-inline-start: 40px;
 
     margin-block-start: 12em;
 
-  }
+}
   
-  .sidenav li {
+.sidenav li {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
   display: block;
-  }
+}
   
-  .sidenav li:hover {
+.sidenav li:hover {
   cursor: pointer;
   color: #f1f1f1;
-  }
+}
   
-  .main {
+.main {
   margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
-  }
+}
   
-  @media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-  }
+}
 
-  #detail {
+#detail {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -261,7 +259,7 @@ h1{
   color: white;
 }
       
- #albumDetail article img {
+#albumDetail article img {
   width: 100%;
   border: 1px solid #333;
   height: auto;

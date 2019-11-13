@@ -1,5 +1,6 @@
 import SideNav from "./components/SideNav";
 import Header from "./components/Header";
+import Logo from "./components/Logo";
 import Footer from "./components/Footer";
 import Album from "./components/Album";
 import Artist from "./components/Artist";
@@ -22,6 +23,7 @@ function pageBuild(){
     navAlbum();
     navArtist();
     navSong();
+    logo();
 }
 
 function header(){
@@ -29,9 +31,21 @@ function header(){
     header.innerHTML = Header();
 }
 
+function logo(){
+    const app = document.querySelector("#app");
+    app.innerHTML = Logo();
+}
+
 function sideNav(){
     const sideNav = document.getElementById("sideNav");
     sideNav.innerHTML = SideNav();
+
+    sideNav.addEventListener("click", function(){
+        if(event.target.classList.contains("nav__home")){
+            const display = document.querySelector("#app");
+            display.innerHTML = "";
+        }
+    })
 }
 
 function footer(){
