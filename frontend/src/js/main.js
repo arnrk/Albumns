@@ -1,4 +1,6 @@
 import SideNav from "./components/SideNav";
+import Header from "./components/Header";
+import Logo from "./components/Logo";
 import Footer from "./components/Footer";
 import Album from "./components/Album";
 import Artist from "./components/Artist";
@@ -15,16 +17,35 @@ export default () => {
 };
 
 function pageBuild(){
+    header();
     sideNav();
     footer();
     navAlbum();
     navArtist();
     navSong();
+    logo();
+}
+
+function header(){
+    const header = document.querySelector(".headerblock");
+    header.innerHTML = Header();
+}
+
+function logo(){
+    const app = document.querySelector("#app");
+    app.innerHTML = Logo();
 }
 
 function sideNav(){
     const sideNav = document.getElementById("sideNav");
     sideNav.innerHTML = SideNav();
+
+    sideNav.addEventListener("click", function(){
+        if(event.target.classList.contains("nav__home")){
+            const display = document.querySelector("#app");
+            display.innerHTML = Logo();
+        }
+    })
 }
 
 function footer(){
@@ -132,7 +153,6 @@ function navAlbum(){
             })
         }
     })
-
 }
 
 function navArtist(){
@@ -296,10 +316,6 @@ function navSong(){
         }
     })
 
-   
-
-    
-
     app.addEventListener("click", function(){
         if(event.target.classList.contains("edit-song__submit")) {
             const songId = event.target.parentElement.querySelector(".song__id")
@@ -311,10 +327,6 @@ function navSong(){
             })
         }
     })
-
-    
-
-   
 
     app.addEventListener("click", function(){
         if(event.target.classList.contains("update-song__submit")) {
@@ -337,9 +349,5 @@ function navSong(){
             }
             );
         }
-    })
-
-    
-
-    
+    }) 
 }

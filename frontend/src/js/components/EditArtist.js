@@ -3,7 +3,6 @@ export default function Artist(artist){
         <section class='main-content__artist'>
             <h3>${artist.name}</h3>
         </section>
-
         <section class='update-artist'>
             <input class="update-artist__name" value="${artist.name}">
             <input class='update-artist__age' type='text' value="${artist.age}">

@@ -23,8 +23,5 @@ export default function Album(albums) {
         `;
       })
       .join("")}
-  </ul>
-  
-
   `;
 }
