@@ -1,5 +1,6 @@
 export default function Song(songs) {
     return `
+
     <div class="songDetail">
       <ul> 
       ${songs
@@ -17,13 +18,6 @@ export default function Song(songs) {
         .join("")}
       </ul>
     </div>
-    <div class="fourm">
-      <section class='add-song'>
-      <h1>Add Song!</h1>
-        <input class='add-song__songName' type='text' placeholder='Add a song!'>
-        <input class='add-song__songDuration' type='text' placeholder='Add song duration'>
-        <button class='add-song__submit' id = "buttonCrud">Submit</button>
-      </section>
-    </div>
+
   `;
 }
