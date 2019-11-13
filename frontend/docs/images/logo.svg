@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="119.30303mm"
+   height="117.94003mm"
+   viewBox="0 0 119.30303 117.94003"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="232.76301"
+     inkscape:cy="303.93896"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="41"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-44.248119,-81.072394)">
+    <g
+       aria-label="V"
+       transform="matrix(0.26458333,0,0,0.26458333,384.77975,7.181546)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:666.66668701px;line-height:1.25;font-family:'Sitka Small';-inkscape-font-specification:'Sitka Small';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#7b1a14;fill-opacity:1;stroke:none"
+       id="flowRoot5750">
+      <path
+         d="m -1239.7759,334.12099 q -1.8182,-4.24243 -5.1515,-8.48485 -3.3334,-4.24242 -8.4849,-6.66667 l -33.6364,-15.15151 V 279.2725 h 164.2425 v 24.54546 l -50.3031,20.30303 109.394,277.27273 10.303,39.69697 h 6.6666 L -927.04869,326.2422 -977.35172,303.81796 V 279.2725 h 141.21212 v 24.54546 l -32.72727,16.36363 q -4.54545,2.42425 -8.78788,6.36364 -3.93939,3.93939 -5.75758,8.78788 l -124.54547,316.96971 -34.2424,72.72727 h -42.4242 z"
+         style="font-size:666.66668701px;fill:#7b1a14;fill-opacity:1"
+         id="path57"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

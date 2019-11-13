@@ -1,15 +1,7 @@
 export default function Header(){
     return `
-    <nav class='sidenav'>
-    <ul>
-    <li class='nav__home' id="button">Home</li>
-    <li class='artists'id="button">Artists</li>
-    <li class='songs' id="button">Songs</li>
-    <li class='albums' id="button">Albums</li>
-    
-    
-    </ul>
-
-</nav>
-    `;
+    <header class="victorCoffeeH1">
+        <img id="headerpicture" src="./images/headerimage.png">
+    </header>
+  `;
 }

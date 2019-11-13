@@ -49,7 +49,7 @@ namespace AlbumCollection.Controllers
 
         // PUT api/album/5
         [HttpPut("{id}")]
-        public IEnumerable<Albums> Put(int id, [FromBody] Albums albums)
+        public IEnumerable<Albums> Put(/*int id,*/ [FromBody] Albums albums)
         {
             albumRepo.Update(albums);
             return albumRepo.GetAll();

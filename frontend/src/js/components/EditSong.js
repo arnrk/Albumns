@@ -3,7 +3,6 @@ export default function Song(song){
         <section class='main-content__song'>
             <h3>${song.name}</h3>
         </section>
-
         <section class='update-song'>
             <input class="update-song__name" value="${song.name}">
             <input class="update-song__duration" value="${song.duration}">
