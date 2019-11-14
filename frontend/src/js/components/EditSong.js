@@ -8,6 +8,7 @@ export default function Song(song){
             <input class="update-song__duration" value="${song.duration}">
             <button class="update-song__submit" id="buttonCrud">Save Changes</button>
             <input class="update-song__id" type='hidden' value="${song.id}">
+            <input class="update-song__albumid" type='hidden' value="${song.albumsID}">
         </section>
     `;
 }

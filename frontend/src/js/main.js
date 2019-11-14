@@ -118,11 +118,13 @@ function navAlbum(){
         if(event.target.classList.contains("update-album__submit")) {
             const albumId = event.target.parentElement.querySelector(".update-album__id")
                 .value;
-            const albumImage = event.target.parentElement.querySelector(".update-album__image")
-                .value;
             const albumName = event.target.parentElement.querySelector(".update-album__name")
                 .value;
             const albumRecordLabel = event.target.parentElement.querySelector(".update-album__RecordLabel")
+                .value;
+            const albumArtistID = event.target.parentElement.querySelector(".update-album__artistid")
+                .value;
+            const albumImage = event.target.parentElement.querySelector(".update-album__image")
                 .value;
                 
             
@@ -130,7 +132,8 @@ function navAlbum(){
                 id: albumId,
                 name: albumName,
                 recordLabel: albumRecordLabel,
-                image: albumImage
+                image: albumImage,
+                artistsID: albumArtistID
 
             }
             apiAction.putRequest(`https://localhost:44397/api/album/${albumId}`,
@@ -336,11 +339,14 @@ function navSong(){
                 .value;
             const songDuration = event.target.parentElement.querySelector(".update-song__duration")
                 .value;
+            const songAlbumID = event.target.parentElement.querySelector(".update-song__albumid")
+                .value;
 
             const songData = {
                 id: songId,
                 name: songName,
-                duration: songDuration
+                duration: songDuration,
+                albumsID: songAlbumID
             }
             apiAction.putRequest(`https://localhost:44397/api/song/${songId}`,
             songData,
